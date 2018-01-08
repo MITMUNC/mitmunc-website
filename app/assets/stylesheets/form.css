@@ -1,0 +1,89 @@
+.content-div{
+  display:block;
+  overflow:scroll;
+  width: 750px ;
+  height: auto;
+  padding: 40px 120px 30px 120px;
+  margin: 60px auto;
+  background-color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  border-radius: 2px;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.15), 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.reg{
+  margin-left: 150px;
+
+}
+
+.main-title_1{
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.subtitle_1{
+  font-weight: lighter;
+  margin-top: -10px;
+  margin-bottom: 0px;
+  font-size: 1.8em;
+  color:gray;
+}
+
+.title_1{
+  font-size: 1.4em;
+  color:#A31F34;
+}
+
+.lighten{
+  font-weight:lighter !important;
+  font-family: 'Open Sans' !important;
+}
+
+
+.btn_2 {
+    padding: 10px 0px;
+    width: 200px;
+    border-radius: 5px;
+    border: 0 none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 15px;
+    text-shadow:none !important;
+    box-shadow: none;
+}
+.btn_2:focus, .btn_2:active:focus, .btn_2.active:focus {
+    outline: 0 none;
+    background: #A31F34;
+}
+
+.btn_2-primary {
+    background: #A31F34;
+    color: #ffffff;
+}
+.btn_2-primary:hover, .btn_2-primary:focus, .btn_2-primary:active, .btn_2-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #c72b43;
+}
+.btn_2-primary:active, .btn_2-primary.active {
+    background: #8D1E2F;
+    box-shadow: none;
+}
+
+#bootstrap-overrides button { /* 100+1=101 priority score, yay! */
+      border: 0 none;
+      font-weight: 500;
+      letter-spacing: 1px;
+      font-size: 15px;
+      text-shadow:none !important;
+      box-shadow: none;
+      background-color: white !important;
+}
+
+.rounded{
+  border-radius:5px;
+  border-style:solid;
+  border-color: #E7E7E7;
+  width: 210px;
+  height:35px;
+  border-width: 1px;
+}

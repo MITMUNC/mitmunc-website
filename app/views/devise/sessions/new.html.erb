@@ -1,0 +1,39 @@
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel="stylesheet" href="/assets/registration.css">
+</head>
+
+<body>
+  <%= render file: "partials/nav_partial.html.erb" %>
+  <div class="signup_body">
+    <div class="title">
+      <h1 class="text_center main-title">Staff Login</h1>
+    </div>
+      <div class="inside_signup">
+      <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <div class="field">
+          <%= f.label :email, :class => "thin"  %><br />
+          <%= f.email_field :email, autofocus: true,:class => 'rounded' %>
+        </div>
+
+        <div class="field">
+          <%= f.label :password, :class => "thin"  %><br />
+          <%= f.password_field :password, autocomplete: "off",:class => 'rounded' %>
+        </div>
+
+        <% if devise_mapping.rememberable? -%>
+          <div class="field">
+            <%= f.check_box :remember_me %>
+            <%= f.label :remember_me %>
+          </div>
+          <% end -%>
+                <br>
+        <div class="actions" id="bootstrap-overrides">
+          <button type="button"><%= f.submit "Login", :class => 'btn_2 btn_2-primary btn_2-lg round signin' %></button>
+          <br>  <br>
+          <div class="links"><%= render "devise/shared/links" %></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</body>

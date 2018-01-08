@@ -1,0 +1,32 @@
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel="stylesheet" href="/assets/profile.css">
+</head>
+
+<body>
+  <%= render file: "partials/nav_partial.html.erb" %>
+
+<div class="panel panel-default">
+  <div class="panel-heading"> <h3>Pending Approvals</h3></div>
+  <table class="table", style="border-collapse: separate; border-spacing: 5px 1px;">
+    <thead>
+        <tr>
+          <th>Applications</th>
+          <th>Accept/Reject</th>
+        </tr>
+    </thead>
+    <% @users.each do |user|%>
+    <tbody>
+        <tr>
+          <td><%= user.email%></td>
+          <% if user.payment%>
+          <td ><%= link_to 'Reject', {:controller => 'users', :action => 'decision',:user_id => user.id, :payment => false}, method: 'post', :class => 'btn_3 btn-sm btn-danger' %></td>
+          <% else%>
+          <td ><%= link_to 'Accept', {:controller => 'users', :action => 'decision',:user_id => user.id, :payment => true}, method: 'post',:class => 'btn_3 btn-sm btn-warning' %></td>
+          <% end%>
+        </tr>
+    </tbody>
+    <% end%>
+  </table>
+</div>
+</body>

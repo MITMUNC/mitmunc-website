@@ -1,0 +1,30 @@
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel="stylesheet" href="/assets/registration.css">
+</head>
+
+<body>
+  <%= render file: "partials/nav_partial.html.erb" %>
+
+<div class="signup_body">
+  <div class="title">
+    <h2 class="text_center">Forgot Your Password?</h2>
+    </div>
+      <div class="inside_signup">
+
+    <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+      <%= devise_error_messages! %>
+
+      <div class="field">
+        <%= f.label :email %><br />
+        <%= f.email_field :email, autofocus: true %>
+      </div>
+    </div>
+      <div class="actions">
+        <%= f.submit "Reset password", :class => 'btn_2 btn_2-primary btn_2-lg signin'%>
+        <br />
+        <%= render "users/shared/links" %>
+      </div>
+<% end %>
+</div>
+</body>

@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel="stylesheet" href="/assets/accommodation.css.erb">
+  <link rel="stylesheet" href="/assets/basic_template.css">
+</head>
+
+  <body>
+    <%= render file: "partials/nav_partial.html.erb" %>
+    <div class="jumbotron">
+      <div class="container text-center jumbo-text">
+        <h2 class="garamond">Accommodations</h2>
+      </div>
+    </div>
+
+
+      <div class="text-center garamond main">
+        <p class="description">MITMUNC X 2018 will be held at the Massachusetts Institute of Technology campus. Following our usual annual agreement, MITMUNC has arranged a discounted
+        rooming rate for delegates and advisors to stay at the Boston Marriot Cambridge,
+        located at Kendall Square on 50 Broadway, Cambridge, MA 02142, United States.</p>
+        <p class="description">Discounted room rate*: $149.00, plus tax, per night</p>
+        <p class="description">The Kendall Square Marriott is the closest hotel to conference venues,
+        a mere 7 minutes walking distance. </p>
+      </div>
+
+      <div class="text-center">
+        <a href="http://www.marriott.com/hotels/travel/boscb-boston-marriott-cambridge/"><figure class="project1"></figure></a>
+      </div>
+
+      <div class="text-center garamond spacer">
+        <p class="description" style="color:rgba(26,26,26,.8)"> <strong>Boston Marriot Cambridge</strong></p>
+        <p class="description"> 50 Broadway, Cambridge, MA 02142</p>
+        <p class="description"> Hotel: (617) 494-6600</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0372249550096!2d-71.08835504924662!3d42.363045942804014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370af6823c2ed%3A0x9179247fafa0ddf8!2sBoston+Marriott+Cambridge!5e0!3m2!1sen!2spr!4v1497822975264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+      </div>
+
+    <%= render file: "partials/footer_partial.html" %>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+
+  </body>
+</html>

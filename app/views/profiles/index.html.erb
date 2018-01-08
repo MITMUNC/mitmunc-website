@@ -1,0 +1,39 @@
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel="stylesheet" href="/assets/profile.css">
+</head>
+
+<body>
+  <%= render file: "partials/nav_partial.html.erb" %>
+</div>
+  <div class = "profile_body">
+    <div class="title">
+      <h1 class = "text_center main-title">MIT MUNC Application Status:</h1>
+    </div>
+    <div class="text_center status">
+        <% if @user.payment %>
+        <% puts @user.payment %>
+        <img  height="40" class="status_img"  src="assets/1477963438_accept-circle.png"></img>
+        <p class = "shorten_width text-center">Your application for MITMUNC 2017 has been approved. </p>
+        <p class = "shorten_width text-center">  Finish your application by completing payment. </p>
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick">
+        <input type="hidden" name="hosted_button_id" value="SUSEUJQVLPB4L">
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+        <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+        </form>
+        <% else %>
+        <a class="check"></a>
+                <img height="40" class="status_img" src="assets/1477963397_alert-triangle-yellow.png"></img>
+        <p class = "text-center">This resource is for internal staff management.</p>
+        <p class = "text-center">For registration information, please refer to the fees and deadlines sub-tab</p>
+        <p class = "text-center"> - MIT Model UN </p>
+
+        <% end %>
+    </div>
+  </div>
+
+
+
+<br>

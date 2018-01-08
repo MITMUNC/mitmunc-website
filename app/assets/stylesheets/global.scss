@@ -1,0 +1,40 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  padding-top: 0px;
+  height: 100%;
+  width: 100%;
+  bottom:0;
+  padding:0;
+  margin:0;
+}
+
+/*USE CUSTOM GARAMOND FONT*/
+@font-face {
+  font-family: 'MyGaramond';
+  src: font-url('/assets/AdobeGaramondProRegular.ttf');}
+.garamond{
+  font-family: 'MyGaramond';
+  font-weight: lighter;
+}
+
+/*USE CUSTOM ITALICIZED GARAMOND FONT*/
+.italic{
+  font-family: 'MyGaramond';
+  font-style: italic;
+  font-weight: lighter;
+}
+
+/*MAKE TEXT UPPERCASE*/
+.upper{
+  text-transform: uppercase;
+}
+.spacer{
+  margin-bottom: 60px;
+}
+.mini-spacer{
+  margin-bottom: 20px;
+}
+
+.font{
+  font-family: 'Montserrat';
+}

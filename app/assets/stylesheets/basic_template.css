@@ -1,0 +1,46 @@
+.jumbotron {
+    position: relative;
+    background: url("https://upload.wikimedia.org/wikipedia/commons/f/fe/UN_Members_Flags.JPG") 200px 0px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    top: -80px;
+    color:white;
+    margin-bottom: -80px;
+}
+
+
+.jumbotron-china {
+    position: relative;
+    background: url("http://www.teamsdesign.com/files/content/Get%20in%20Touch%20Shanghai/Get_in_Touch_Shanghai_shanghai%20city_1620x672.jpg") 200px 0px;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    overflow: hidden;
+    top: -80px;
+    color:white;
+    margin-bottom: -80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.jumbo-text{
+  margin-top:170px;
+}
+
+.main{
+  width: 70%;
+  margin: 50px auto;
+  margin-bottom: 10px;
+}
+.main-text{
+  font-size: 17px;
+}
+
+span.glyphicon{
+  font-size: 20px;
+}
