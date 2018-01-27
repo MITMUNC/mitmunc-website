@@ -1,28 +1,21 @@
-<<<<<<< HEAD
 # README
+The repository encapuslates management of the MITMUNC website.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## First-time Set-up
+* Clone this repository
+* Install [Cyberduck](https://cyberduck.io/) - used to manage putting files on athena locker
+* Install [Keka](http://www.kekaosx.com/en/) - used to zip files, note: native mac zipper breaks
+  on aws for an unknown reason.
 
-Things you may want to cover:
+## Database (aka Athena locker where we put all our pdfs, images, and whatnot) 
+Ask a mitmunc officer to add you as an administrator to the locker if you are not already. Connect
+to the mitmunc folder via CyberDuck. You should be able to delete and add files from CyberDuck.
 
-* Ruby version
+## Deployment instructions
+* Zip the folder using Keka, upload to the [mitmunc elastic beanstalk instance](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=MITMunc&environmentId=e-qmbzvgu5re), and redeploy.
+* Note that previous versions can easily be redeployed with the history on elastic bean-stalk
+* Login Information should be obitained from the current officer team / previous technology
+  director.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-=======
-# MITMUNC
->>>>>>> c3c989e9f6e04644fce98ae01797d3045f05db45
+## Google Analytics
+Tbd (to be documented)
