@@ -34,9 +34,11 @@ Rails.application.routes.draw do
 
   get '/about', to: 'abouts#index'
 
-  get '/fees', to: 'fees#index'
+  get '/information', to: 'information#index'
 
   get '/china', to: 'china#index'  
+
+  get '/dayofconference', to: 'dayofconference#index'  
 
   get '/users/decision', to: 'users#decision'
 
