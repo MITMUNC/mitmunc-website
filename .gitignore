@@ -1,6 +1,7 @@
 log/development.log
 tmp/
 *.DS_Store
+public/assets/
 
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
