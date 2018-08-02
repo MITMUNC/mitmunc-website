@@ -1,4 +1,4 @@
-log/development.log
+log/
 tmp/
 *.DS_Store
 public/assets/
