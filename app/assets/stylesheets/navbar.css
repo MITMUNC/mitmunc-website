@@ -22,7 +22,8 @@
   height: 8em;
   width: 100%;
   font-size: 12px;
-  background-color: white;
+  background-color: #e5b9be;
+  color: white;
   -webkit-box-shadow: 0 8px 6px -6px #999;
   -moz-box-shadow: 0 8px 6px -6px #999;
   box-shadow: 0 5px 6px -6px #999;

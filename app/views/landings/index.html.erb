@@ -1,18 +1,18 @@
 <html>
 
-  <head>
-    <%= render file: "partials/meta_partial.html" %>
-    <link rel='stylesheet' href='/assets/landing.css.erb'>
-    <title>MIT Model United Nations Conference</title>
-    <link rel="shortcut icon" type="image/x-icon" href="http://mun.mit.edu/sites/default/files/favicon.ico" />
-  </head>
-    <body>
-      <%= render file: "partials/nav_partial.html.erb" %>
+<head>
+  <%= render file: "partials/meta_partial.html" %>
+  <link rel='stylesheet' href='/assets/landing.css.erb'>
+  <title>MIT Model United Nations Conference</title>
+  <link rel="shortcut icon" type="image/x-icon" href="http://mun.mit.edu/sites/default/files/favicon.ico" />
+</head>
+<body>
+  <%= render file: "partials/nav_partial.html.erb" %>
 
 
 
-      <!-- Modal -->
-<div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
+  <!-- Modal -->
+<!-- <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -21,12 +21,12 @@
       </div>
       <div class="modal-body">
         <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/International_Rescue_Committee_%28logo%29.png" class="img-responsive center-block">
-
+  
         <p class="text-center"><strong><BR>MITMUNC 2017 has partnered with the International Rescue Committee as its charity partner.<BR></strong></p>
         <p>The IRC is known for its renowned response to refugee crises around the world. Apart from implementing localized relief efforts in areas of need, such as <strong>providing healthcare to war victims in Aleppo, Syria</strong> and assisting in the <strong>relocation of men, women, and children to safer areas</strong>, the IRC has introduced innovative solutions, such as providing direct cash transfers to people in dire financial need. Moreover, the IRC backs up and justifies its efforts with comprehensive research studies and trials, leveraging its resources to maximize impact. Finally, <strong>the IRC holds great ties to M.I.T.</strong> since researchers from the university have collaborated on measuring the impact of certain programs. <strong>We are very proud in knowing that International Rescue Committee President and CEO David Miliband is also an alum of M.I.T.</strong><BR><BR></p>
         <p class="text-center"><strong>Help us reach our goal by donating $2,$5, or more below!</strong> </p>
 
-
+ 
 
         <p class="text-center"> <a href="https://bit.ly/IRC_MITMUNC" class="btn btn-primary"> Donate here! </a></p>
       </div>
@@ -35,56 +35,57 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#memberModal">
   Launch modal
 </button> -->
 
 <script type="text/javascript">
-$('#memberModal').modal('show');
+  $('#memberModal').modal('show');
 </script>
 
 
 
-      <div class="text-center">
-        <h3 style= "font-size:20px; font-weight: 400px;" class="italic">Massachusetts Institute of Technology</h3>
-        <h2 style= "font-weight: 700px; font-size:35px;" class="upper">Model United Nations Conference</h2>
-        <h3 style= "font-size:20px; font-weight: 400px;" class="italic">February 9-11, 2018</h3>
-        <button type="button" class="btn btn-primary btn-lg btn-nav signin">
-          <a class="login_button" href="/information">Learn more</a>
-        </button>
-         </br> </br>
-      </div>
-      <div class="jumbotron">
-        <div class="container text-center jumbo-text">
+<div class="text-center">
+<!--   <h3 style= "font-size:20px; font-weight: 400px;" class="italic">Massachusetts Institute of Technology</h3>
+  <h2 style= "font-weight: 700px; font-size:35px;" class="upper">Model United Nations Conference</h2>
+  <h3 style= "font-size:20px; font-weight: 400px;" class="italic">February 9-11, 2018</h3>
+  <button type="button" class="btn btn-primary btn-lg btn-nav signin">
+    <a class="login_button" href="/information">Learn more</a>
+  </button>        
+</br> </br> -->
+</div>
+
+<div class="container main">
+ <div class="row">
+   <BR/>
+   <h1 style="font-size:28px; margin-bottom:25px;" class="text-center garamond">Letter from the Secretary-General</h1>
+   <div style="color:rgba(26,26,26,.7)"  class="col-md-12 block-center garamond">
+    <!-- <img class="sec-pic" src="http://www.babybedding.com/images/fabric/silver-gray-minky-fabric_medium.jpg"></img> -->
+    <%= render file: "../assets/content/secretary_letter.html" %>
+  </div>
+</div>
+</div>
+</div>
+
+<div class="jumbotron">
+  <div class="container text-center jumbo-text">
 <!--           <h3 style= "font-size:20px; font-weight: 400px;" class="italic">Massachusetts Institute of Technology</h3>
           <h2 style= "font-weight: 700px; font-size:35px;" class="upper">Model United Nations Conference</h2>
           <h3 style= "font-size:20px; font-weight: 400px;" class="italic">February 9-11, 2018</h3>
-           </br> </br> -->
-          <!-- Commented this out to remove register button -->
-
-          </br> </br>
-        </div>
-      </div>
-
-      <div class="container main">
-         <div class="row">
-         <BR/>
-          <h1 style="font-size:28px; margin-bottom:25px;" class="text-center garamond">Letter from the Secretary-General</h1>
-          <div style="color:rgba(26,26,26,.7)"  class="col-md-12 block-center garamond">
-            <!-- <img class="sec-pic" src="http://www.babybedding.com/images/fabric/silver-gray-minky-fabric_medium.jpg"></img> -->
-            <%= render file: "../assets/content/secretary_letter.html" %>
-          </div>
-        </div>
-      </div>
+        </br> </br> -->
+        <!-- Commented this out to remove register button -->
+        
+      </br> </br>
     </div>
+  </div>    
 
-      <%= render file: "/partials/footer_partial.html" %>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <%= render file: "/partials/footer_partial.html" %>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
 
 
-    </body>
+</body>
 </html>
