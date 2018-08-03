@@ -24,7 +24,7 @@ To work on a bug or new feature:
 And voilà! Now you just have to wait for an administrator to merge your branch into `master`
 
 ## Deployment
-Travis CI is set up to auto-deploy the `master` branch to http://www.mitmunc.org// and the `dev` branch to the [test environment](http://mitmunc-test-env.aj3uu2pxjs.us-east-1.elasticbeanstalk.com/).
+Travis CI is set up to auto-deploy the `master` branch to http://www.mitmunc.org// and all other branches to the [test environment](http://mitmunc-test-env.aj3uu2pxjs.us-east-1.elasticbeanstalk.com/).
 
 ## Google Analytics
 To be documented...
