@@ -1,3 +1,12 @@
 language: ruby
 rvm:
- - 2.5
+  2.5
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: AKIAICRNVQJLD4Z6RP4Q
+  secret_access_key:
+    secure: jyY4ZiTsaGduce5h4e04i59xhS/rZvl6SgmFDKz8u4n8iiwpAuJg2XVUnpPE5CPGftPWNrj2Z+cQe905gL6clSZ0Spkdkt59SFgGW6aDUDVhPJthWhR6isguBASqMpSM2XUYMmtyaCaVtrToZ9SO7+2oQjdp3xcWMk/la1kg0HOJcVdeAZGgKXXJuhkOqkDFxg0zlLaGN/kTWDE5xU21yvd2QJQ/oqWHKVz8AJ4cNyER9qLssFNcGCSyJNqNVsgZJxXcvIargac3aLtOmQVQnXfM0FK+vFZ9nDBuiClVB4yOwMY8BMsRqLAxTUmRDR7f2N4SmD8r/QK+bfKVJ3MHK5MM1UYP61c5aCyPYvhgHbbKvdAHjbmMm9HbMS4mwLx5irTU0/MDz70D2Dira7EnwMSNQ/+zzcbRNby9hLKWKUIwytQNnDzun6oqt3eGFIcw4kyAu6cutWQzNd4pAIj0sXW5ImomxLncTdWxLqQIvSzs8Il7OULIeglMsU7xu1HnanNv88ZjL4HzJae+fwuQlzTtk8SKIbrx7xRjHoJc2HOr3t1oIOGyG/RlHTMAXJfG8MZDRSmx+wl6gcIzYVfKJf/21y8VzZDbixH2j65x2ZfCsHAymz9+nvnGiXJDxY+C9Xu4Z7bdJtVAnkT5OF7bqHhPB1VwZddSzbNzMIqiVy8=
+  region: us-east-1
+  app: MITMunc
+  env: Mitmunc-test-env
+  bucket_name: elasticbeanstalk-us-east-1-296292345586
