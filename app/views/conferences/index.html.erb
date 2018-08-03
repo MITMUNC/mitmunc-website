@@ -1,44 +1,4 @@
-<html>
-
-<head>
-  <%= render file: "partials/meta_partial.html" %>
-  <link rel="stylesheet" href="/assets/conference.css.erb">
-  <link rel="stylesheet" href="/assets/basic_template.css">
-</head>
-
-  <body>
-    <%= render file: "partials/nav_partial.html.erb" %>
-
-          <!-- Modal -->
-    <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="memberModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title" id="memberModalLabel">Contribute to the International Rescue Committee</h4>
-          </div>
-          <div class="modal-body">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/International_Rescue_Committee_%28logo%29.png" class="img-responsive center-block">
-      
-            <p class="text-center"><strong><BR>MITMUNC 2018 has partnered with the International Rescue Committee as its charity partner.<BR></strong></p>
-            <p>The IRC is known for its renowned response to refugee crises around the world. Apart from implementing localized relief efforts in areas of need, such as <strong>providing healthcare to war victims in Aleppo, Syria</strong> and assisting in the <strong>relocation of men, women, and children to safer areas</strong>, the IRC has introduced innovative solutions, such as providing direct cash transfers to people in dire financial need. Moreover, the IRC backs up and justifies its efforts with comprehensive research studies and trials, leveraging its resources to maximize impact. Finally, <strong>the IRC holds great ties to M.I.T.</strong> since researchers from the university have collaborated on measuring the impact of certain programs. <strong>We are very proud in knowing that International Rescue Committee President and CEO David Miliband is also an alum of M.I.T.</strong><BR><BR></p>
-            <p class="text-center"><strong>Help us reach our goal by donating $2,$5, or more below!</strong> </p>
-
-     
-
-            <p class="text-center"> <a href="https://bit.ly/IRC_MITMUNC" class="btn btn-primary"> Donate here! </a></p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-sm" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-<!--     <script type="text/javascript">
-    $('#memberModal').modal('show');
-    </script>   -->  
-
+<% content_for :title do %>MIT Model United Nations Conference - Committees<% end %>
 
     <div class="jumbotron-unflags">
       <div class="container text-center jumbo-text">
@@ -50,7 +10,7 @@
        <div class="row">
         <div class="garamond text-center">
           <p style="font-size:16px; color:rgba(26,26,26,.7)">MITMUNC features many different committees that embark on a wide array of enthralling topics past, present, and future.</p>
-          <p style="font-size:16px; color:rgba(26,26,26,.7)"></p>          
+          <p style="font-size:16px; color:rgba(26,26,26,.7)"></p>
         </div>
       </div>
     </div>
@@ -131,7 +91,7 @@
               </div>
 
               <h4>European Union<hr></h4>
-              <div>           
+              <div>
                 <p> Chairs: Steven Holcomb, Jack Gordon</p>
                 <p> Topics: Turkish Accession to the EU, EU Military</p>
                 <p> <%= link_to "Download Background Guide", { :controller => "conferences",
@@ -205,6 +165,3 @@
             </div>
         </div>
   </div>
-    <%= render file: "partials/footer_partial.html" %>
-  </body>
-</html>
