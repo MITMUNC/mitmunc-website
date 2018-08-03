@@ -2,9 +2,9 @@ language: ruby
 rvm: 2.5
 deploy:
   provider: elasticbeanstalk
-  access_key_id: ${AWS_ACCES_KEY_ID}
+  access_key_id: $ACCESKEYID
   secret_access_key:
-    secure: ${AWS_SECRET_ACCESS_KEY}
+    secure: "$SECRETACCESSKEY"
   region: us-east-1
   app: MITMunc
   env: Mitmunc-test-env
