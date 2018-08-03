@@ -1,21 +1,24 @@
 # README
-The repository encapuslates management of the MITMUNC website.
+This repository hosts MITMUNC's website.
 
 ## First-time Set-up
 * Clone this repository
-* Install [Cyberduck](https://cyberduck.io/) - used to manage putting files on athena locker
-* Install [Keka](http://www.kekaosx.com/en/) - used to zip files, note: native mac zipper breaks
-  on aws for an unknown reason.
+* Make sure you have Ruby 2.5 installed &mdash; If you don't have Ruby on your computer or have a different version, you can use [rvm](https://rvm.io/)
+* Install Bundler: `gem install bundler`
+* Check that the app builds: `bundle install`
 
-## Database (aka Athena locker where we put all our pdfs, images, and whatnot) 
-Ask a mitmunc officer to add you as an administrator to the locker if you are not already. Connect
-to the mitmunc folder via CyberDuck. You should be able to delete and add files from CyberDuck.
+## Development
+To work on a bug or new feature:
+* Assign yourself to the relevant issue
+* Create a new feature branch with a descriptive name, e.g. "redesign login page"
+* Commit and push your work
+* Submit a pull request
+* Review the comments on the pull request (if any)
 
-## Deployment instructions
-* Zip the folder using Keka, upload to the [mitmunc elastic beanstalk instance](https://console.aws.amazon.com/elasticbeanstalk/home?region=us-east-1#/environment/dashboard?applicationName=MITMunc&environmentId=e-qmbzvgu5re), and redeploy.
-* Note that previous versions can easily be redeployed with the history on elastic bean-stalk
-* Login Information should be obitained from the current officer team / previous technology
-  director.
+And voilà! Now you just have to wait for an administrator to merge your branch into `master`
+
+## Deployment
+Travis CI is set up to auto-deploy the `master` branch to http://www.mitmunc.org// and the `dev` branch to the [test environment](http://mitmunc-test-env.aj3uu2pxjs.us-east-1.elasticbeanstalk.com/).
 
 ## Google Analytics
-Tbd (to be documented)
+To be documented...
