@@ -1,5 +1,11 @@
-# README
-This repository hosts MITMUNC's website.
+# MITMUNC Website
+
+| **Build status** |
+|:----------------:|
+| ![build-status](https://travis-ci.com/MITMUNC/mitmunc-website.svg?branch=master) |
+
+## Overview
+This repository hosts http://www.mitmunc.org/, the website of the MIT Model United Nations Club organizing MITMUNC (MIT Model United Nations Conference). It is built with [Ruby on Rails](https://rubyonrails.org/).
 
 ## First-time Set-up
 * Clone this repository
