@@ -2,9 +2,9 @@ language: ruby
 rvm: 2.5
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAJ65CPPGG7BP55BKA
+  access_key_id: $ACCESSKEYID
   secret_access_key:
-    secure: ZDi14iwmVFgIOle6jGF50jlWb9shtzN3x3Mb+On0m4oRbYKpK/cD0KyqAjq8t4V17Sk32PZf5WsWuW5TlF6cvamF/CbysTOknHtN53awA8LKWWEM98q6kb/7+SK2ipOG2AtL2xf/DVu08DELoFX+J1SHyW40w74MN1V8N3D+AzQkLwT68q1K5koACLMIuqqWm7KGA9cn+7PbuZWe7Lv/PGTcLZJs5YTt0f5e9W65G28XCkC3NmcDzcNJuvfg24dKRK1KoxYkXZQSlSx57bOx7e+JmqKDpDlS9vprM+Xxlnqz+bnHKzDasesJb6uqxf4nzgOVCVBlRRm90uPhQsj84ECAxKtB4sT2DSJbGfU8xLas0K26UIMksyhSQYGQT2A4qMBJVnmGo8Db18qSaggToatWhtkYBKB1YYZp975R3Bsr7eQcThG/Vd0dqvSP2ma7ZXsXt71sNx+suniDEwT8vp3KnzFFEWX01j/SYN4JeZKXb+EFs91cFvVvomofGE/Sy7GJe9NnEM8UW6pvqy6InDleDRIVjVRRzCR3L1Dc4rf1zhLq09JXrQiRUwds7yrJs3JYnZQR3weyM1p2IrV+d8DyB8k68BVevWoqSzVoRo/0//X6RkURxSFxV5F87Ir2ipSTqjv2HG6EwWqzz1YS8UbCUO/YzYgRIwY/nEddn04=
+    secure: "$SECRETACCESSKEY"
   region: us-east-1
   app: MITMunc
   env: Mitmunc-test-env
