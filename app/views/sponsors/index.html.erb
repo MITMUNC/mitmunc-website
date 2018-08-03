@@ -1,14 +1,4 @@
-<html>
-
-<head>
-  <%= render file: "partials/meta_partial.html" %>
-  <link rel="stylesheet" href="/assets/sponsors.css.erb">
-  <link rel="stylesheet" href="/assets/basic_template.css">
-  <title>MIT Model UN Conference - Sponsorship</title>
-</head>
-
-  <body>
-    <%= render file: "partials/nav_partial.html.erb" %>
+<% content_for :title do %>MIT Model UN Conference - Sponsorship<% end %>
 
   <div style = "color:rgba(26,26,26,.7);"class="garamond main main-text">
   <h2 class="garamond text-center">Sponsor Us </h2>
@@ -49,13 +39,3 @@
   </div>
 
   </div>
-
-
-    <%= render file: "partials/footer_partial.html" %>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-   <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-
-  </body>
-</html>

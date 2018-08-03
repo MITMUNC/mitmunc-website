@@ -1,25 +1,12 @@
-  <html>
-
-  <head>
-    <%= render file: "partials/meta_partial.html" %>
-    <link rel="stylesheet" href="/assets/basic_template.css">
-    <link rel="stylesheet" href="/assets/about.css.erb">
-    <title>MIT Model United Nations Conference - About</title>
-
-  </head>
-
-    <body>
-      <%= render file: "partials/nav_partial.html.erb" %>
+<% content_for :title do %>MIT Model United Nations Conference - About<% end %>
       <div class="container main">
          <div class="row">
           <h2 class="garamond">What is MITMUNC?</h2>
-
           <div class="garamond" style="color:rgba(26,26,26,.7)">
             <%= render file: "../assets/content/about_content.html" %>
           </div>
         </div>
       </div>
-    </div>
 
 
     <div class="row text-center garamond mini-spacer">
@@ -51,7 +38,7 @@
             </p>
           </div>
         </div>
-      </div>     
+      </div>
 
       <div class="col-md-4">
         <div class="card">
@@ -65,7 +52,7 @@
         </div>
       </div>
     </div>
-     
+
 
 <div class="row">
       <div class="col-md-4">
@@ -91,7 +78,7 @@
             </p>
           </div>
         </div>
-      </div>      
+      </div>
 
       <div class="col-md-4">
         <div class="card">
@@ -131,7 +118,7 @@
             </p>
           </div>
         </div>
-      </div>      
+      </div>
 
       <div class="col-md-4">
         <div class="card">
@@ -157,17 +144,8 @@
       <ul style="color:rgba(26,26,26,.7)">
       </BR>
       </BR>
-      
+
 
 
       </ul>
     </div>
-
-      <%= render file: "partials/footer_partial.html" %>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-     <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-
-    </body>
-</html>

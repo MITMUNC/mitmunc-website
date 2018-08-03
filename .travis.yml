@@ -1,0 +1,25 @@
+language: ruby
+rvm: 2.5
+deploy:
+  - provider: elasticbeanstalk
+    access_key_id: $ACCESSKEYID
+    secret_access_key:
+      secure: "$SECRETACCESSKEY"
+    region: us-east-1
+    app: MITMunc
+    env: Mitmunc-test-env
+    bucket_name: elasticbeanstalk-us-east-1-296292345586
+    on:
+      repo: MITMUNC/mitmunc-website
+      branch: dev
+  - provider: elasticbeanstalk
+    access_key_id: $ACCESSKEYID
+    secret_access_key:
+      secure: "$SECRETACCESSKEY"
+    region: us-east-1
+    app: MITMunc
+    env: Mitmunc-env
+    bucket_name: elasticbeanstalk-us-east-1-296292345586
+    on:
+      repo: MITMUNC/mitmunc-website
+      branch: master

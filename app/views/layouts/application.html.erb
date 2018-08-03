@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MIT Model UN Conference</title>
     <%= csrf_meta_tags %>
-
+    <%= render file: "partials/meta_partial.html.erb" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -15,7 +14,10 @@
             <%= value %>
         </div>
     <% end %>
+    <%= render file: "partials/nav_partial.html.erb" %>
 
     <%= yield %>
+
+    <%= render file: "partials/footer_partial.html" %>
   </body>
 </html>

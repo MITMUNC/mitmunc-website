@@ -1,14 +1,5 @@
-<html>
+<% content_for :title do %>MIT Model United Nations Conference - Info & Fees<% end %>
 
-<head>
-  <%= render file: "partials/meta_partial.html" %>
-  <link rel="stylesheet" href="/assets/fees.css.erb">
-  <link rel="stylesheet" href="/assets/basic_template.css">
-  <title>MIT Model UN Conference - Fees & Deadlines</title>
-</head>
-
-<body>
-  <%= render file: "partials/nav_partial.html.erb" %>
   <div style = "color:rgba(26,26,26,.7);" class="garamond main main-text">
     <p class="te">
       In order to ensure participation in MITMUNC XI 2019, faculty advisors and delegates must pay special attention to our conference deadlines as well as apply early and properly.<BR/><BR/>
@@ -16,6 +7,7 @@
       The following was the schedule followed for MITMUNC X 2018.
     </p>
 
+    <div id="conference-info">
     <div style="color: #BD2031" class="text-center">
       <h2>Important Dates <span class="glyphicon glyphicon-calendar"></span></h2>
     </div>
@@ -66,11 +58,11 @@
         Payment <i>must</i> be received upon specified conference deadlines to secure your delegation's spots in MITMUNC. Failure to complete this process will result in a delegation's spots being released to waitlist due to high demand.
         <BR/><BR/>
         <h3 class="date-heading">Financial Aid</h3>If payment of conference fees is a barrier to participation to MITMUNC, you may apply for financial aid to assist in reduction of conference fees.
-      </p>     
+      </p>
       <BR/>
       <div class="text-center" style="color:#BD2031">
         <h2>Conference Schedule <span class="glyphicon glyphicon-calendar"></span></h2>
-      </div>    
+      </div>
 
       <p> The following is the schedule for MITMUNC X 2018, Feb 9th-11th.</p>
       <div class="col-md-6">
@@ -122,7 +114,7 @@
         <BR/><BR/>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.0372249550096!2d-71.08835504924662!3d42.363045942804014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370af6823c2ed%3A0x9179247fafa0ddf8!2sBoston+Marriott+Cambridge!5e0!3m2!1sen!2spr!4v1497822975264" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-      </div>      
+      </div>
 
       <div class="col-md-12 text-center main-text ">
         <div class="text-center" style="color:#BD2031">
@@ -173,16 +165,8 @@
 </form>
 </div>
 <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-<!--End mc_embed_signup-->          
+<!--End mc_embed_signup-->
         </div>
       </div>
+    </div>
       <p class = "ellipsis">&hellip;</p>
-
-      <%= render file: "partials/footer_partial.html" %>
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-
-
-    </body>
-    </html>
