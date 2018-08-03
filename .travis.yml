@@ -10,3 +10,5 @@ deploy:
   app: MITMunc
   env: Mitmunc-test-env
   bucket_name: elasticbeanstalk-us-east-1-296292345586
+  on:
+    branch: ruby-2.5
