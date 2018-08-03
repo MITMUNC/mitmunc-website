@@ -2,9 +2,9 @@ language: ruby
 rvm: 2.5
 deploy:
   provider: elasticbeanstalk
-  access_key_id: 'AKIAIXWZEXWILGRJ6UOA'
+  access_key_id: "$AWS_ACCES_KEY_ID"
   secret_access_key:
-    secure: 'bDTdDUvsFm3hosx0Uu/h4KZV27MHcFLqRV1vdlzdcbvEZ7UP6alk/eaukySXBJbnlNa1PRulJejjP6qNEHCnnIVeReqVQJSVMwwQnrJN4+qLDPKmsqmooXUN3YuX1di5JU2oakbxDjeSRh3d47wVWupBdHqgaxyZ1D1zUCab+dr2amJhe9fEWV58+95fCR3BvZx5bnb6CRqzDtr0F2WuPShTrcG8XSwEzJxBk9z3jQMpxKMBW/an25plvWRxTWZWkZY9+K9W32TO/kzji99+J3az6/YTYsEHEP13/fQ2smEJOp07MVsYr26HjWxOB0lELMGtv5vSZTqLxvoPpJv4odnd9HohakrPj2BJiBG4F/sGS1oERd4NhNA0qt1JQqxoeW94h0RLpypj3MdizzCyASQ1M8ZUYpPuejq+qOogUI3AX1yLRvxqQ96ALOXicZreHVCdkYZVoKu98sgBP7ypH6/qM737yKsstsYjkbg/cShPA6GPok9Zs/e3kNfW57WbFAcbfY2ZlrKb1ZG7A8XdzdWbrugZFz9SePaIsYHx+c7+JSiDUMVZhwqYd9UcYwOIyGdUrjPxxm9c7jWiQr2NAt2Vl4TreeSjzwQie2KkWLRP47aqm55CASy0TW7/Fh82FfhjmK4oYepjxMbLwqzbAEn4wW0uZjHIcc1/cgtVa2c='
+    secure: "$AWS_SECRET_ACCESS_KEY"
   region: us-east-1
   app: MITMunc
   env: Mitmunc-test-env
