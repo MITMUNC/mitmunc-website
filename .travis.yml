@@ -8,6 +8,7 @@ deploy:
   region: us-east-1
   app: MITMunc
   env: Mitmunc-test-env
+  bucket_name: elasticbeanstalk-us-east-1-296292345586
   on:
     repo: MITMUNC/mitmunc-website
     branch: ruby-2.5
