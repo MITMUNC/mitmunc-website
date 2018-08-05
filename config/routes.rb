@@ -4,13 +4,16 @@ Rails.application.routes.draw do
 
   # resources :profiles
 
-  devise_for :admins
+  devise_for :admin
 
-  devise_for :users
+  devise_for :user
 
-  resource "profile", only:[:index, :edit]
+  authenticate :user do
+    resources :profiles, only: :index
+    resource :profile, only: [:show, :new, :edit]
+  end
 
-  resource "registration_form", only:[:index,:new, :update]
+  resource "registration_form", only: [:index, :new, :update]
 
   get 'download_pdf', to: 'conferences#download_pdf'
 
@@ -18,7 +21,7 @@ Rails.application.routes.draw do
 
   get '/sponsors', to: 'sponsors#index'
 
-  get '/profile', to: 'profiles#index', as: :user_root
+  #get '/profile', to: 'profiles#index', as: :user_root
 
   get '/registration_form', to: 'registration_forms#index'
   post '/registration_form', to: 'registration_forms#create'
