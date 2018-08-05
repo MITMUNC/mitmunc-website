@@ -1,13 +1,19 @@
 /***********************
   LOGO POSITIONING
 ************************/
-.logo{
-  position: relative;
-  display: block;
-  height: 80px;
-  width: 100px;
+.navbar-header {
+  height: inherit;
 }
 
+.logo {
+  height: inherit;
+  margin: 0em 1em;
+}
+
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
 /***********************
   CLEAR OUT PADDING
 ************************/
@@ -41,6 +47,11 @@
   top:30px;
 }
 
+#primary-nav.navbar-nav {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 @media (min-width: 979px) {
   ul.nav li.dropdown:hover > ul.dropdown-menu {
     display: block;
@@ -70,11 +81,6 @@
 .nav-item a:hover{ color:black; background-color: #fff !important; }
 .nav-item a:click{ color:black; background-color: #fff !important; }
 
-#crest{
-    width:75px;
-    margin-left: 20px;
-    margin-top: -5px;
-}
 /***********************
   BUTTON
 ************************/
