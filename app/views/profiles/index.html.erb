@@ -5,7 +5,7 @@
     <div class="text_center status">
         <% if @user.payment %>
         <% puts @user.payment %>
-        <img  height="40" class="status_img"  src="assets/1477963438_accept-circle.png"></img>
+        <%= image_tag "accept-circle.png", class: "status_img", alt: "Accepted", height: 40 %>
         <p class = "shorten_width text-center">Your application for MITMUNC 2017 has been approved. </p>
         <p class = "shorten_width text-center">  Finish your application by completing payment. </p>
 
@@ -17,7 +17,7 @@
         </form>
         <% else %>
         <a class="check"></a>
-                <img height="40" class="status_img" src="assets/1477963397_alert-triangle-yellow.png"></img>
+        <%= image_tag "alert-triangle-yellow.png", class: "status_img", alt: "Alert!", height: 40 %>
         <p class = "text-center">This resource is for internal staff management.</p>
         <p class = "text-center">For registration information, please refer to the fees and deadlines sub-tab</p>
         <p class = "text-center"> - MIT Model UN </p>
