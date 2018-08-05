@@ -31,9 +31,7 @@
 
      <p class="btn btn-primary btn-lg" class = "ellipsis" >
         <%= link_to "Download Our Sponsorship Brochure",
-            { :controller => "conferences",
-              :action => "download_pdf",
-              :name =>'MITMUNC-X-Sponsorship-Document'},
+            asset_path("MITMUNC-X-Sponsorship-Document.pdf", skip_pipeline: true),
             { style: 'color: white;'} %>
      </p>
   </div>

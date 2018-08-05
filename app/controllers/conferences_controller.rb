@@ -6,15 +6,6 @@ class ConferencesController < ApplicationController
   def index
   end
 
-  def download_pdf
-    name = params[:name]
-    send_file(
-      "#{Rails.root}/app/data/#{name}.pdf",
-      filename: "#{name}.pdf",
-      type: "application/pdf"
-    )
-  end
-
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_conference
