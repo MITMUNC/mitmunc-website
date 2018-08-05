@@ -1,12 +1,12 @@
 <% content_for :title do %>MIT Model United Nations Conference - Committees<% end %>
 
     <div class="jumbotron-unflags">
-      <div class="container text-center jumbo-text">
-        <h2 class="garamond">MITMUNC X 2018 Committeess</h2>
+      <div id="committees-header" class="container text-center jumbo-text">
+        <h2 class="garamond">MITMUNC X 2018 Committees</h2>
       </div>
     </div>
 
-    <div class="container main">
+    <div id="committees-main-text" class="container main">
        <div class="row">
         <div class="garamond text-center">
           <p style="font-size:16px; color:rgba(26,26,26,.7)">MITMUNC features many different committees that embark on a wide array of enthralling topics past, present, and future.</p>
@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="container main garamond">
+    <div id="committees-main-list" class="container main garamond">
       <div id="accordion">
           <div class="spacer">
               <h4>United Nations Security Council<hr></h4>
@@ -27,7 +27,7 @@
                                                                :name =>'MITMUNC - UNSC'} %> </p>
               </div>
 
-              <h4>Disarmament and International Security Committee</h4>
+              <h4>Disarmament and International Security Committee<hr></h4>
               <div>
                 <p> Chairs: Alex Zele, Justin Gong</p>
                 <p> Topics: Democratic People’s Republic of Korea, Proliferation of Cyberweapons</p>
@@ -56,14 +56,14 @@
 
               <h4>United Nations Economic Commission for Latin America and the Caribbean<hr></h4>
               <div>
-                <p> Chairs: Radha Mastreanda, Amy Fang</p>
+                <p> Chairs: Radha Mastreanda, Amy Fang<hr></p>
                 <p> Topics: Climate Change, Income Inequality</p>
                 <p> <%= link_to "Download Background Guide", { :controller => "conferences",
                                                                :action => "download_pdf",
                                                                :name =>'MITMUNC - UNECLAC'} %> </p>
               </div>
 
-              <h4>World Health Organization</h4>
+              <h4>World Health Organization<hr></h4>
               <div>
                 <p> Chairs: Smrithi Raman, Lani Lee</p>
                 <p> Topics: Tuberculosis, HIV and AIDS </p>
@@ -99,7 +99,7 @@
                                                                :name =>'MITMUNC - EU'} %> </p>
               </div>
 
-              <h4>World Trade Organization</h4>
+              <h4>World Trade Organization<hr></h4>
               <div>
                 <p> Chairs: Brook Eyob, Melanie Chen</p>
                 <p> Topics: Trade and Climate Change, Consumer Protection</p>
