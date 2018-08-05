@@ -9,15 +9,8 @@ Rails.application.routes.draw do
   devise_for :users
 
   resource "profile", only:[:index, :edit]
+
   resource "registration_form", only:[:index,:new, :update]
-
-  get 'sessions/login'
-
-  get 'sessions/home'
-
-  get 'sessions/profile'
-
-  get 'sessions/setting'
 
   get 'download_pdf', to: 'conferences#download_pdf'
 
@@ -36,7 +29,7 @@ Rails.application.routes.draw do
 
   get '/fees', to: 'fees#index'
 
-  get '/china', to: 'china#index'  
+  get '/china', to: 'china#index'
 
   get '/users/decision', to: 'users#decision'
 
