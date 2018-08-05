@@ -1,5 +1,5 @@
 class ApprovalController < ApplicationController
-  # before_filter :authorize_admin
+  before_filter :authorize_admin
   def index
     @users = User.all
   end
