@@ -9,19 +9,19 @@ This repository hosts http://www.mitmunc.org/, the website of the MIT Model Unit
 
 ## First-time Set-up
 * Clone this repository
-* Make sure you have Ruby 2.5 installed &mdash; If you don't have Ruby on your computer or have a different version, you can use [rvm](https://rvm.io/)
+* Make sure you have Ruby 2.5 installed &mdash; if you don't have Ruby (or have a different version), you can use [rvm](https://rvm.io/)
 * Install Bundler: `gem install bundler`
 * Check that the app builds: `bundle install`
 
 ## Development
 To work on a bug or new feature:
 * Assign yourself to the relevant issue
-* Create a new feature branch with a descriptive name, e.g. "redesign login page"
+* Create a new feature branch with a descriptive name, e.g. `login-redesign`
 * Commit and push your work
 * Submit a pull request
 * Review the comments on the pull request (if any)
 
-And voilà! Now you just have to wait for an administrator to merge your branch into `master`
+And voilà! Now you just have to wait for an administrator to merge your branch into `master`.
 
 ## Deployment
 Travis CI is set up to auto-deploy the `master` branch to http://www.mitmunc.org// and all other branches to the [test environment](http://mitmunc-test-env.aj3uu2pxjs.us-east-1.elasticbeanstalk.com/).
