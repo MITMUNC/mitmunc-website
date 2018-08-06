@@ -12,6 +12,7 @@ deploy:
     on:
       repo: MITMUNC/mitmunc-website
       all_branches: true
+      condition: $TRAVIS_BRANCH != "master"
   - provider: elasticbeanstalk
     access_key_id: $ACCESSKEYID
     secret_access_key:
