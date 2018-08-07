@@ -9,7 +9,10 @@ This repository hosts http://www.mitmunc.org/, the website of the MIT Model Unit
 
 ## First-time Set-up
 * Clone this repository
+  cd ~/Documents
+  git clone git@github.com:MITMUNC/mitmunc-website.git OR git clone https://github.com/MITMUNC/mitmunc-website.git
 * Make sure you have Ruby 2.5 installed &mdash; if you don't have Ruby (or have a different version), you can use [rvm](https://rvm.io/)
+* Install rails http://installrails.com/
 * Install Bundler: `gem install bundler`
 * Check that the app builds: `bundle install`
 
