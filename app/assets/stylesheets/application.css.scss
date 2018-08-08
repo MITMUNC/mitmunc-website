@@ -11,6 +11,9 @@
  * It is generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
+
+@import "variables";
 @import "bootstrap";
+@import "navbar";
+@import "main";
