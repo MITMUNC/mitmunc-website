@@ -1,0 +1,19 @@
+.container-footer {
+  .row {
+    @extend .bg-darkred;
+    @extend .justify-content-center;
+    @extend .align-items-center;
+  }
+  a, span {
+    @extend .text-light;
+  }
+  small {
+    color: lightgrey;
+  }
+}
+.footer-contact {
+  height: 3em;
+}
+.footer-copyright {
+  opacity: 0.9;
+}
