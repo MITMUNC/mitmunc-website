@@ -3,17 +3,18 @@
     @extend .bg-darkred;
     @extend .justify-content-center;
     @extend .align-items-center;
-  }
-  a, span {
-    @extend .text-light;
-  }
-  small {
-    color: lightgrey;
+    @extend .text-center;
+    a {
+      color: inherit;
+    }
   }
 }
 .footer-contact {
-  height: 3em;
+  min-height: 3em;
+  @extend .text-light;
 }
 .footer-copyright {
+  @extend small;
+  color: lightgrey;
   opacity: 0.9;
 }
