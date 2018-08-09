@@ -2,15 +2,30 @@
   @include media-breakpoint-up(md) {
     max-width: 720px;
   }
-  @extend .my-5;
   font-family: $font-family-serif;
+  @extend .my-5, .text-muted;
 }
 
-.img-footer {
-  height: 300px;
-  overflow: hidden;
+.letter-title {
+  @extend h2, .text-center;
+}
+
+.jumbotron-highlight {
+  position: relative;
+  overflow-y: hidden;
+  @extend .my-0, .py-0;
   img {
+    margin-top: -5%;
     width: 100%;
-    margin-top: -150px;
+  }
+}
+
+.img-attribution {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @extend .mr-1, .mb-1, small;
+  &, a {
+    @extend .text-secondary;
   }
 }
