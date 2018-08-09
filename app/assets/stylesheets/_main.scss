@@ -1,9 +1,9 @@
 .container-main {
+  @extend .my-5, .text-muted;
   @include media-breakpoint-up(md) {
     max-width: 720px;
   }
   font-family: $font-family-serif;
-  @extend .my-5, .text-muted;
 }
 
 .letter-title {
@@ -11,9 +11,9 @@
 }
 
 .jumbotron-highlight {
+  @extend .my-0, .py-0;
   position: relative;
   overflow-y: hidden;
-  @extend .my-0, .py-0;
   img {
     margin-top: -5%;
     width: 100%;
@@ -21,10 +21,10 @@
 }
 
 .img-attribution {
+  @extend .mr-1, .mb-1, small;
   position: absolute;
   bottom: 0;
   right: 0;
-  @extend .mr-1, .mb-1, small;
   &, a {
     @extend .text-secondary;
   }

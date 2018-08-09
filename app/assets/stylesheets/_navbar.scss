@@ -1,9 +1,20 @@
-#crest {
-  height: 60px;
-  width: 60px;
-}
-.bg-darkred {
-  background-color: darkred;
+.navbar-main {
+  @extend .navbar-expand-lg, .navbar-dark, %bg-darkred;
+  .navbar-brand {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+  .navbar-nav {
+    @extend .mr-auto;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
 }
 /*
 .login_button{

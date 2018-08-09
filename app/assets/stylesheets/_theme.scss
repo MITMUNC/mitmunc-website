@@ -1,0 +1,6 @@
+%bg-darkred {
+  background-color: darkred;
+}
+.btn-register {
+  @extend .btn-info, .text-uppercase;
+}

@@ -13,12 +13,15 @@
  *= require_self
  */
 
-// Custom variables to ov
+// Override and add variables.
 @import "variables";
 
+// CSS libraries.
 @import "bootstrap";
 @import "font-awesome";
 
+// Custom partials.
+@import "theme";
 @import "navbar";
 @import "main";
 @import "footer";
