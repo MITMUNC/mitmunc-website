@@ -8,6 +8,11 @@
 
 .letter-title {
   @extend h2, .text-center;
+  &::after {
+    @extend hr;
+    content: '';
+    display: block;
+  }
 }
 
 .jumbotron-highlight {
