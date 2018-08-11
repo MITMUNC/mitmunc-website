@@ -1,12 +1,12 @@
 .container-main {
-  @extend .my-5, .text-muted;
+  @extend .my-5;
   @include media-breakpoint-up(md) {
     max-width: 720px;
   }
   font-family: $font-family-serif;
 }
 
-.letter-title {
+.title-main {
   @extend h2, .text-center;
   &::after {
     @extend hr;
