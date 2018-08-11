@@ -1,0 +1,20 @@
+.container-about {
+  @extend .my-3;
+  font-family: $font-family-serif;
+  .row {
+    @extend .mb-3;
+    .card {
+      border: 0;
+      .card-img-top {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .card-body {
+        @extend .pt-2, .text-center;
+        .card-title {
+          @extend .mb-0, strong;
+        }
+      }
+    }
+  }
+}
