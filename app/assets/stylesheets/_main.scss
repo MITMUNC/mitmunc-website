@@ -15,6 +15,11 @@
   }
 }
 
+.subtitle {
+  @extend h3, .text-center;
+  color: darkred;
+}
+
 .jumbotron-highlight {
   @extend .my-0, .py-0;
   position: relative;
