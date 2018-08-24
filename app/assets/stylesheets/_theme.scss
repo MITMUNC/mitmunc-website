@@ -1,6 +1,65 @@
-%bg-darkred {
-  background-color: darkred;
+.container-main {
+  @extend .my-5;
+  @include media-breakpoint-up(md) {
+    max-width: 720px;
+  }
+  font-family: $font-family-serif;
 }
+
+.container-heads {
+  @extend .my-3;
+  font-family: $font-family-serif;
+  .row {
+    @extend .mb-3;
+    .card {
+      border: 0;
+      .card-img-top {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+      .card-body {
+        @extend .pt-2, .text-center;
+        .card-title {
+          @extend .mb-0, strong;
+        }
+      }
+    }
+  }
+}
+
+.title {
+  @extend h2, .text-center;
+  &::after {
+    @extend hr;
+    content: '';
+    display: block;
+  }
+}
+
+.subtitle {
+  @extend h3, .text-center;
+  color: darkred;
+}
+
 .btn-register {
   @extend .btn-info, .text-uppercase;
+}
+
+.jumbotron-highlight {
+  @extend .my-0, .py-0;
+  position: relative;
+  overflow-y: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+.img-attribution {
+  @extend .mr-1, .mb-1, small;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  &, a {
+    @extend .text-secondary;
+  }
 }

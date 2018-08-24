@@ -1,5 +1,6 @@
 .navbar-main {
-  @extend .navbar-expand-lg, .navbar-dark, %bg-darkred;
+  @extend .navbar-expand-lg, .navbar-dark;
+  background-color: $bg-base;
   .navbar-brand {
     img {
       height: 60px;
@@ -16,21 +17,3 @@
     }
   }
 }
-/*
-.login_button{
-  text-decoration: none !important;
-  color: white !important;
-}
-
-.sign_out{
-  letter-spacing: 2px;
-  color:gray !important;
-  text-decoration: none !important;
-}
-
-.sign_out:hover, .sign_out:focus, .sign_out:active:focus, .sign_out:focus {
-  color:black;
-  text-decoration: none !important;
-  background-color: white !important;
-}
-*/

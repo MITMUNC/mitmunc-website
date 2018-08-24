@@ -1,6 +1,7 @@
 .container-footer {
   .row {
-    @extend %bg-darkred, .justify-content-center, .align-items-center, .text-center;
+    @extend .justify-content-center, .align-items-center, .text-center;
+    background-color: $bg-base;
     a {
       color: inherit;
     }
