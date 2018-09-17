@@ -1,136 +1,306 @@
 <% content_for :title do %>MIT Model United Nations Conference - Committees<% end %>
-
-    <div class="jumbotron-unflags">
-      <div id="committees-header" class="container text-center jumbo-text">
-        <h2 class="garamond">MITMUNC X 2018 Committees</h2>
-      </div>
+<div class="container container-main">
+  <div class="row">
+    <div class="col">
+      <h1 class="title">MITMUNC X 2018 Committees</h1>
     </div>
-
-    <!-- TODO: update with new commmittees -->
-    <div id="committees-main-text" class="container main">
-       <div class="row">
-        <div class="garamond text-center">
-          <p style="font-size:16px; color:rgba(26,26,26,.7)">MITMUNC features many different committees that embark on a wide array of enthralling topics past, present, and future.</p>
-          <p style="font-size:16px; color:rgba(26,26,26,.7)"></p>
-        </div>
-      </div>
-    </div>
-
-    <div id="committees-main-list" class="container main garamond">
-      <div id="accordion">
-          <div class="spacer">
-              <h4>United Nations Security Council<hr></h4>
-              <div>
-                <p> Chairs: Claire Hsu, Ellie Plachinski</p>
-                <p> Topics: The Nuclear Threat on the Korean Peninsula, The Status of Iran’s Nuclear Program</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - UNSC.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Disarmament and International Security Committee<hr></h4>
-              <div>
-                <p> Chairs: Alex Zele, Justin Gong</p>
-                <p> Topics: Democratic People’s Republic of Korea, Proliferation of Cyberweapons</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - DISEC.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Futuristic Committee<hr></h4>
-              <div>
-                <p> Chairs: Aaron Fleischer, Ting Li</p>
-                <p> Topics: Nuclear Proliferation, Race to Space</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - Futuristic.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Human Rights Council<hr></h4>
-              <div>
-                <p> Chairs: Daniel Hong, Kristen Surrao</p>
-                <p> Topics: Personal Protection Rights, Children's Rights</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - HRC.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>United Nations Economic Commission for Latin America and the Caribbean<hr></h4>
-              <div>
-                <p> Chairs: Radha Mastreanda, Amy Fang<hr></p>
-                <p> Topics: Climate Change, Income Inequality</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - UNECLAC.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>World Health Organization<hr></h4>
-              <div>
-                <p> Chairs: Smrithi Raman, Lani Lee</p>
-                <p> Topics: Tuberculosis, HIV and AIDS </p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - WHO.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>United Nations Environment Program<hr></h4>
-              <div>
-                <p> Chairs: Áron Ricardo Perez Lopez, Nadezhda Dimitrova</p>
-                <p> Topics: Hydraulic Fracturing, Nuclear Power as a Sustainable, Non-Renewable Source of Energy</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - UNEP.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Historical Committee<hr></h4>
-              <div>
-                <p> Chair: Christopher Copeland, Katie O'Nell</p>
-                <p> Topic: British War Cabinet, French War Cabinet</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - Historical.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>European Union<hr></h4>
-              <div>
-                <p> Chairs: Steven Holcomb, Jack Gordon</p>
-                <p> Topics: Turkish Accession to the EU, EU Military</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - EU.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>World Trade Organization<hr></h4>
-              <div>
-                <p> Chairs: Brook Eyob, Melanie Chen</p>
-                <p> Topics: Trade and Climate Change, Consumer Protection</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - WTO.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>International Monetary Fund<hr></h4>
-              <div>
-                <p> Chairs: Griffin Ansel, Anagh Tiwary</p>
-                <p> Topics: The Membership of Cuba, The Greek Bailout</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - IMF.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>International Atomic Energy Agency<hr></h4>
-              <div>
-                <p> Chairs: Joe Faraguna, Jacob Miske</p>
-                <p> Topics: Non-Proliferation Treaty Renegotiation, Waste Reduction Methods</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - IAEA.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Association of Southeast Asian Nations<hr></h4>
-              <div>
-                <p> Chairs: Zoya Fan, Stephanie Yuen</p>
-                <p> Topics: Effective Implementation of Women's Economic Rights Legislation, Drug Trafficking</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - ASEAN.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>United Nations High Council for Refugees<hr></h4>
-              <div>
-                <p> Chairs: Kendall Garner, Alexander Papp</p>
-                <p> Topics: High Risk Migrant Movements across the Mediterranean, Rohingya Refugee Crisis in Myanmar</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - UNHCR.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Special Political & Decolonization Committee<hr></h4>
-              <div>
-                <p> Chairs: Miana Smith, Miller Tan</p>
-                <p> Topic: Issue of Gibraltar, Nuclear Testing in French Polynesia</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - SPECPOL.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-              <h4>Economic Social Council<hr></h4>
-              <div>
-                <p> Chairs: Oumaïma Makhlouk, Sarah Quraishi</p>
-                <p> Topic: Humanitarian Crisis in Puerto Rico, Economic Aid for Syria</p>
-                <p> <%= link_to "Download Background Guide", asset_path("MITMUNC - ECOSOC.pdf", skip_pipeline: true) %> </p>
-              </div>
-
-            </div>
-        </div>
   </div>
+  <div class="row">
+    <div class="col">
+      <p>MITMUNC features many different committees that embark on a wide array of enthralling topics past, present, and future.</p>
+    </div>
+  </div>
+  <% # TODO: Update with new committees. %>
+  <div class="row">
+    <div id="committeeAccordion" class="col">
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeUNSC" data-toggle="collapse">
+          <h2>United Nations Security Council</h2>
+        </div>
+        <div id="committeeUNSC" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Claire Hsu</li>
+            <li>Ellie Plachinski</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>The Nuclear Threat on the Korean Peninsula</li>
+            <li>The Status of Iran’s Nuclear Program</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - UNSC.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeDISEC" data-toggle="collapse">
+          <h2>Disarmament and International Security Committee</h2>
+        </div>
+        <div id="committeeDISEC" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Alex Zele</li>
+            <li>Justin Gong</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Democratic People’s Republic of Korea</li>
+            <li>Proliferation of Cyberweapons</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - DISEC.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeFuturistic" data-toggle="collapse">
+          <h2>Futuristic Committee</h2>
+        </div>
+        <div id="committeeFuturistic" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Aaron Fleischer</li>
+            <li>Ting Li</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Nuclear Proliferation</li>
+            <li>Race to Space</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - Futuristic.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeHRC" data-toggle="collapse">
+          <h2>Human Rights Council</h2>
+        </div>
+        <div id="committeeHRC" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Daniel Hong</li>
+            <li>Kristen Surrao</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Personal Protection Rights</li>
+            <li>Children's Rights</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - HRC.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeUNECLAC" data-toggle="collapse">
+          <h2>United Nations Economic Commission for Latin America and the Caribbean</h2>
+        </div>
+        <div id="committeeUNECLAC" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Radha Mastreanda</li>
+            <li>Amy Fang</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Climate Change</li>
+            <li>Income Inequality</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - UNECLAC.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeWHO" data-toggle="collapse">
+          <h2>World Health Organization</h2>
+        </div>
+        <div id="committeeWHO" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Smrithi Raman</li>
+            <li>Lani Lee</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Tuberculosis</li>
+            <li>HIV and AIDS</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - WHO.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeUNEP" data-toggle="collapse">
+          <h2>United Nations Environment Program</h2>
+        </div>
+        <div id="committeeUNEP" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Áron Ricardo Perez Lopez</li>
+            <li>Nadezhda Dimitrova</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Hydraulic Fracturing</li>
+            <li>Nuclear Power as a Sustainable, Non-Renewable Source of Energy</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - UNEP.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeHistorical" data-toggle="collapse">
+          <h2>Historical Committee</h2>
+        </div>
+        <div id="committeeHistorical" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Christopher Copeland</li>
+            <li>Katie O'Nell</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>British War Cabinet</li>
+            <li>French War Cabinet</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - Historical.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeEU" data-toggle="collapse">
+          <h2>European Union</h2>
+        </div>
+        <div id="committeeEU" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Steven Holcomb</li>
+            <li>Jack Gordon</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Turkish Accession to the EU</li>
+            <li>EU Military</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - EU.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeWTO" data-toggle="collapse">
+          <h2>World Trade Organization</h2>
+        </div>
+        <div id="committeeWTO" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Brook Eyob</li>
+            <li>Melanie Chen</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Trade and Climate Change</li>
+            <li>Consumer Protection</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - WTO.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeIMF" data-toggle="collapse">
+          <h2>International Monetary Fund</h2>
+        </div>
+        <div id="committeeIMF" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Griffin Ansel</li>
+            <li>Anagh Tiwary</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>The Membership of Cuba</li>
+            <li>The Greek Bailout</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - IMF.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeIAEA" data-toggle="collapse">
+          <h2>International Atomic Energy Agency</h2>
+        </div>
+        <div id="committeeIAEA" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Joe Faraguna</li>
+            <li>Jacob Miske</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Non-Proliferation Treaty Renegotiation</li>
+            <li>Waste Reduction Methods</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - IAEA.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeASEAN" data-toggle="collapse">
+          <h2>Association of Southeast Asian Nations</h2>
+        </div>
+        <div id="committeeASEAN" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Zoya Fan</li>
+            <li>Stephanie Yuen</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Effective Implementation of Women's Economic Rights Legislation</li>
+            <li>Drug Trafficking</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - ASEAN.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeUNHCR" data-toggle="collapse">
+          <h2>United Nations High Council for Refugees</h2>
+        </div>
+        <div id="committeeUNHCR" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Kendall Garner</li>
+            <li>Alexander Papp</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>High Risk Migrant Movements across the Mediterranean</li>
+            <li>Rohingya Refugee Crisis in Myanmar</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - UNHCR.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeSPECPOL" data-toggle="collapse">
+          <h2>Special Political & Decolonization Committee</h2>
+        </div>
+        <div id="committeeSPECPOL" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Miana Smith</li>
+            <li>Miller Tan</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Issue of Gibraltar</li>
+            <li>Nuclear Testing in French Polynesia</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - SPECPOL.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="btn btn-outline-info text-left" data-target="#committeeECOSOC" data-toggle="collapse">
+          <h2>Economic Social Council</h2>
+        </div>
+        <div id="committeeECOSOC" class="card-body collapse" data-parent="#committeeAccordion">
+          <h3>Chairs</h3>
+          <ul>
+            <li>Oumaïma Makhlouk</li>
+            <li>Sarah Quraishi</li>
+          </ul>
+          <h3>Topics</h3>
+          <ul>
+            <li>Humanitarian Crisis in Puerto Rico</li>
+            <li>Economic Aid for Syria</li>
+          </ul>
+          <p><%= link_to "Download Background Guide", asset_path("MITMUNC - ECOSOC.pdf", skip_pipeline: true) %></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

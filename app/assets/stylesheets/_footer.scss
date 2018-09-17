@@ -1,0 +1,18 @@
+.container-footer {
+  .row {
+    @extend .justify-content-center, .align-items-center, .text-center;
+    background-color: $bg-base;
+    a {
+      color: inherit;
+    }
+  }
+}
+.footer-contact {
+  @extend .py-3, .text-light;
+  min-height: 3em;
+}
+.footer-copyright {
+  @extend .py-1, small;
+  color: lightgrey;
+  opacity: 0.9;
+}

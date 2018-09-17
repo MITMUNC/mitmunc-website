@@ -1,0 +1,23 @@
+<div class="container-fluid container-navbar">
+  <nav class="row navbar navbar-main">
+    <a class="navbar-brand" href="/">
+      <%= image_tag "mitmunc_logo_circular.png", id: "crest", alt: "MITMUNC Logo" %>
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="#navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/committees">Committees</a></li>
+          <li><a href="/fees">Conference Information</a></li>
+          <li><a href="/china">MITMUNC China</a></li>
+          <li><a href="/sponsors">Sponsor Us</a></li>
+      </ul>
+      <% if REGISTRATION_OPEN %>
+      <a class ="btn btn-register" href="/registration_form">Register now</a>
+      <% end %>
+    </div>
+  </nav>
+</div>

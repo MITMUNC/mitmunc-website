@@ -10,6 +10,21 @@
  * files in this directory. Styles in this file should be added after the last require_* statement.
  * It is generally better to create a new file per style scope.
  *
- *= require_tree .
  *= require_self
  */
+
+// Override and add variables.
+@import "variables";
+
+// CSS libraries.
+@import "bootstrap";
+@import "font-awesome";
+
+// Custom partials.
+@import "theme";
+@import "navbar";
+@import "footer";
+
+// Page-specific styles.
+@import "fees";
+@import "conferences";

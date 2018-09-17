@@ -2,7 +2,7 @@
 <html>
   <head>
     <%= csrf_meta_tags %>
-    <%= render "layouts/meta" %>
+    <%= render "meta" %>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -14,10 +14,10 @@
             <%= value %>
         </div>
     <% end %>
-    <%= render "layouts/nav" %>
+    <%= render "nav" %>
 
     <%= yield %>
 
-    <%= render "layouts/footer" %>
+    <%= render "footer" %>
   </body>
 </html>

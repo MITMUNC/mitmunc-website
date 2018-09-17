@@ -1,0 +1,19 @@
+.navbar-main {
+  @extend .navbar-expand-lg, .navbar-dark;
+  background-color: $bg-base;
+  .navbar-brand {
+    img {
+      height: 60px;
+      width: 60px;
+    }
+  }
+  .navbar-nav {
+    @extend .mr-auto;
+    li {
+      @extend .nav-item;
+      a {
+        @extend .nav-link;
+      }
+    }
+  }
+}
