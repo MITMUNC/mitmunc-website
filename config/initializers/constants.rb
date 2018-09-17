@@ -1,0 +1,1 @@
+REGISTRATION_OPEN = false
