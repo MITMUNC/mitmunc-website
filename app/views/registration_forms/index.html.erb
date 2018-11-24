@@ -1,3 +1,4 @@
+<% if registration_open? %>
 <% content_for :title do %>MIT Model United Nations Conference XI Registration<% end %>
 <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.7555" rel="stylesheet" type="text/css" />
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.7555" />
@@ -283,8 +284,6 @@
     ]);
   }, 20);
 </script>
-</head>
-<body>
 <form class="jotform-form" action="https://submit.jotform.us/submit/82555693177166/" method="post" name="form_82555693177166" id="82555693177166" accept-charset="utf-8" style="margin-top: 3em; margin-bottom: 3em;">
   <input type="hidden" name="formID" value="82555693177166" />
   <div class="form-all" style="margin-left: auto; margin-right: auto;">
@@ -1311,3 +1310,10 @@
   </script>
 </form>
 <script type="text/javascript">JotForm.ownerView=true;</script>
+<% else %>
+<div class="container container-main">
+  <div class="alert alert-danger" role="alert">
+    Registration for MITMUNC XI is closed.
+  </div>
+</div>
+<% end %>
