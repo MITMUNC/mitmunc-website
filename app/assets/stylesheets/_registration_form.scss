@@ -1,4 +1,14 @@
 .jotform-form {
     margin-top: 3em;
     margin-bottom: 3em;
+
+    li[data-type="control_captcha"] {
+        > label {
+            text-align: center;
+        }
+        div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
