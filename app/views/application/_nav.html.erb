@@ -17,6 +17,8 @@
       </ul>
       <% if registration_open? %>
       <a class ="btn btn-register" href="/registration_form">Register now</a>
+      <% elsif waitlist_open? %>
+      <a class ="btn btn-register" href="/registration_form">Join the waitlist</a>
       <% end %>
     </div>
   </nav>
