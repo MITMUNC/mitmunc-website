@@ -2,9 +2,12 @@
   @extend .navbar-expand-lg, .navbar-dark;
   background-color: $bg-base;
   .navbar-brand {
-    img {
+    #crest {
       height: 60px;
       width: 60px;
+    }
+    #name {
+      @extend .ml-2;
     }
   }
   .navbar-nav {
