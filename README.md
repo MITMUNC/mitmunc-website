@@ -8,11 +8,11 @@
 This repository hosts http://www.mitmunc.org/, the website of the MIT Model United Nations Club organizing MITMUNC (MIT Model United Nations Conference). It is built with [Ruby on Rails](https://rubyonrails.org/).
 
 ## First-time Set-up
+1. Clone this repository: `git clone git@github.com:MITMUNC/mitmunc-website.git` or `git clone https://github.com/MITMUNC/mitmunc-website.git`.
 1. Install Ruby 2.5 if you don't have it already.
     * If you have another version installed or don't want to mess with your system, use [Ruby Version Manager (RVM)](https://rvm.io/).
 1. Install Bundler: `gem install bundler`.
-1. Clone this repository: `git clone git@github.com:MITMUNC/mitmunc-website.git` or `git clone https://github.com/MITMUNC/mitmunc-website.git`.
-1. Install dependencies and build website: `bundle install` (you need to re-execute this every time you update the `Gemfile`).
+1. Build website and install dependencies: `bundle install` (you need to re-execute this every time you update the `Gemfile`).
 
 ## Development
 To work on a bug or new feature:
