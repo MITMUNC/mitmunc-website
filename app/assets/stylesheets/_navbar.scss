@@ -19,4 +19,18 @@
       }
     }
   }
+  .navbar-social {
+    @extend .mr-5;
+    span {
+      @extend .mr-2;
+    }
+    a {
+      @extend .align-middle;
+      display: inline-block;
+      color: white;
+      .fa {
+        @extend .mr-1;
+      }
+    }
+  }
 }
