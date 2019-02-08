@@ -1,3 +1,18 @@
 .date-heading {
 	@extend h6, .font-weight-bold;
 }
+
+#schedule {
+	@extend .mb-3, .justify-content-center;
+	div {
+		ul {
+		@extend .list-group;
+			li {
+				@extend p, .list-group-item;
+			}
+			.date-heading {
+				@extend .list-group-item-dark;
+			}
+		}
+	}
+}
