@@ -1,5 +1,8 @@
 <% content_for :title do %>MIT Model United Nations Conference<% end %>
 <div class="container container-main">
+<% if conference_open? %>
+  <div class="alert alert-info" role="alert">MITMUNC XI 2019 has started! The conference schedule can be found <a href="/fees#schedule">here</a>.</div>
+<% end %>
   <div class="row">
     <div class="col">
       <h1 class="title">Letter from the Secretaries-General</h1>
