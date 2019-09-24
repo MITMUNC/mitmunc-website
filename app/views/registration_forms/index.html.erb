@@ -1,8 +1,8 @@
 <% if registration_open? or waitlist_open? %>
 <% content_for :title do %>MIT Model United Nations Conference XII <% if registration_open? %>Registration<% else %>Waitlist Application<% end %><% end %>
-<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.12995" rel="stylesheet" type="text/css" />
-<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.12995" />
-<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.12995" />
+<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13025" rel="stylesheet" type="text/css" />
+<link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.13025" />
+<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13025" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/themes/CSS/548b1325700cc48d318b4567.css?"/>
 <style type="text/css">
   .form-label-left{
@@ -154,7 +154,7 @@
 </style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/punycode/1.4.1/punycode.min.js"></script>
 <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"></script>
-<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.12995" type="text/javascript"></script>
+<script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.13025" type="text/javascript"></script>
 <script type="text/javascript">
   JotForm.setConditions([{
     "action":[{"id":"action_1537161869821","visibility":"RequireMultiple","fields":["40","41","42","43"],"isError":false}],
@@ -182,11 +182,12 @@
     JotForm.clearFieldOnHide="disable";
     /*INIT-END*/
 	});
-  JotForm.prepareCalculationsOnTheFly([null,
+  JotForm.prepareCalculationsOnTheFly([
+    null,
     {"name":"mitModel","qid":"1","text":"MIT Model United Nations Conference XII 2020","type":"control_head"},
-    {"name":"joinThe","qid":"2","text":"Join the waitlist for MITMUNC XII 2020","type":"control_button"},
+    {"name":"registerFor","qid":"2","text":"Register for MITMUNC XII 2020","type":"control_button"},
     {"name":"schoolorganizationName","qid":"3","text":"School\u002FOrganization Name","type":"control_textbox"},
-    {"name":"doubleclickTo","qid":"4","text":"The waitlist for MITMUNC XII 2020 has opened.\nPlease make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization&rsquo;s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration.&nbsp;","type":"control_text"},
+    {"name":"doubleclickTo","qid":"4","text":"Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization&rsquo;s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration.&nbsp;","type":"control_text"},
     null,null,null,null,null,
     {"name":"heading10","qid":"10","text":"General School Information","type":"control_head"},
     null,
@@ -220,14 +221,20 @@
     {"description":"","name":"financialAssistance40","qid":"40","subLabel":"","text":"Financial Assistance Q1: Why are you interested in bringing your students to the MIT Model United Nations Conference?(400 words or less)","type":"control_textarea"},
     {"description":"","name":"financialAssistance","qid":"41","subLabel":"","text":"Financial Assistance Q2: Have students from your school previously participated in Model UN conferences or other academic conferences\u002Fcompetitions?  If yes, how did the experience or similar experiences impact your students? What effect do you think MITMUNC will have for the students who attend the conference? (500 words or less)","type":"control_textarea"},
     {"description":"","name":"financialAssistance42","qid":"42","subLabel":"","text":"Financial Assistance Q3: Have you requested funding from your school to cover school and\u002For delegate registration fees? What actions have you or someone within your school taken to cover the fees associated with attending MITMUNC?(300 words or less)","type":"control_textarea"},
-    {"description":"","name":"financialAssistance43","qid":"43","subLabel":"","text":"Financial Assistance Q4: Please explain in detail why you are requesting registration fee waivers. What specific financial burden(s) pose a challenge to your students from participating in MITMUNC? You may elaborate upon other specifics that you may want to add in this section (300 words or less)","type":"control_textarea"}
+    {"description":"","name":"financialAssistance43","qid":"43","subLabel":"","text":"Financial Assistance Q4: Please explain in detail why you are requesting registration fee waivers. What specific financial burden(s) pose a challenge to your students from participating in MITMUNC? You may elaborate upon other specifics that you may want to add in this section (300 words or less)","type":"control_textarea"},
+    null,
+    {"description":"","name":"howMany45","qid":"45","subLabel":"Beginner Tier Committees  require no experience! ","text":"How many Beginner Tier Committee spots would your delegation like?","type":"control_dropdown"},
+    {"description":"","name":"howMany46","qid":"46","subLabel":"Intermediate Tier Committees are recommended for delegates who have attended another conference.","text":"How many Intermediate Tier Committee spots would your delegation like?","type":"control_dropdown"},
+    {"description":"","name":"howMany","qid":"47","subLabel":"Advanced Tier Committees are recommended for delegates who have attended 2 or more conferences.","text":"How many Advanced Tier Committee spots would your delegation like?","type":"control_dropdown"},
+    {"description":"","name":"tags","qid":"48","text":"Tags","type":"control_checkbox"}
   ]);
   setTimeout(function() {
-    JotForm.paymentExtrasOnTheFly([null,
+    JotForm.paymentExtrasOnTheFly([
+      null,
       {"name":"mitModel","qid":"1","text":"MIT Model United Nations Conference XII 2020","type":"control_head"},
-      {"name":"joinThe","qid":"2","text":"Join the waitlist for MITMUNC XII 2020","type":"control_button"},
+      {"name":"registerFor","qid":"2","text":"Register for MITMUNC XII 2020","type":"control_button"},
       {"name":"schoolorganizationName","qid":"3","text":"School\u002FOrganization Name","type":"control_textbox"},
-      {"name":"doubleclickTo","qid":"4","text":"The waitlist for MITMUNC XII 2020 has opened.\nPlease make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization&rsquo;s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration.&nbsp;","type":"control_text"},
+      {"name":"doubleclickTo","qid":"4","text":"Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization&rsquo;s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration.&nbsp;","type":"control_text"},
       null,null,null,null,null,
       {"name":"heading10","qid":"10","text":"General School Information","type":"control_head"},
       null,
@@ -238,13 +245,13 @@
       {"description":"If you are registering as a single delegate, please put in the number of parents or legal guardian(s) that will be accompanying you to the conference. ","name":"numberOf","qid":"16","text":"Number of Faculty Advisors","type":"control_dropdown"},
       null,null,
       {"name":"email","qid":"19","subLabel":"","text":"E-mail","type":"control_email"},
-      {"name":"primaryPhone","qid":"20","subLabel":"+Country Code + Phone Number","text":"Primary Phone Number","type":"control_textbox"},
-      {"name":"primaryFaculty","qid":"21","text":"Primary Faculty Advisor Address","type":"control_address"},
+      {"name":"primaryPhone","qid":"20","subLabel":"+Country Code + Phone Number","text":"Primary Phone Number","type":"control_textbox"},{"name":"primaryFaculty","qid":"21","text":"Primary Faculty Advisor Address","type":"control_address"},
       {"name":"positionIn22","qid":"22","text":"Position in School\u002FOrganization","type":"control_textbox"},
       {"name":"areYou","qid":"23","text":"Are you registering a single delegate?","type":"control_radio"},
       {"name":"heading24","qid":"24","text":"Additional Information","type":"control_head"},
       {"name":"hasYour","qid":"25","text":"Has your delegation attended MITMUNC previously?","type":"control_radio"},
-      null,{"name":"pleaseEnter27","qid":"27","text":"Please click in the box below to verify your identity.","type":"control_captcha"},
+      null,
+      {"name":"pleaseEnter27","qid":"27","text":"Please click in the box below to verify your identity.","type":"control_captcha"},
       {"name":"heading28","qid":"28","text":"Final Verification and Submission","type":"control_head"},
       {"name":"isThere","qid":"29","text":"Is there anything that you would like to highlight to the MITMUNC Secretariat in regards to your application?","type":"control_textbox"},
       {"name":"howDid30","qid":"30","text":"How did you hear of MITMUNC?","type":"control_textbox"},
@@ -260,7 +267,12 @@
       {"description":"","name":"financialAssistance40","qid":"40","subLabel":"","text":"Financial Assistance Q1: Why are you interested in bringing your students to the MIT Model United Nations Conference?(400 words or less)","type":"control_textarea"},
       {"description":"","name":"financialAssistance","qid":"41","subLabel":"","text":"Financial Assistance Q2: Have students from your school previously participated in Model UN conferences or other academic conferences\u002Fcompetitions?  If yes, how did the experience or similar experiences impact your students? What effect do you think MITMUNC will have for the students who attend the conference? (500 words or less)","type":"control_textarea"},
       {"description":"","name":"financialAssistance42","qid":"42","subLabel":"","text":"Financial Assistance Q3: Have you requested funding from your school to cover school and\u002For delegate registration fees? What actions have you or someone within your school taken to cover the fees associated with attending MITMUNC?(300 words or less)","type":"control_textarea"},
-      {"description":"","name":"financialAssistance43","qid":"43","subLabel":"","text":"Financial Assistance Q4: Please explain in detail why you are requesting registration fee waivers. What specific financial burden(s) pose a challenge to your students from participating in MITMUNC? You may elaborate upon other specifics that you may want to add in this section (300 words or less)","type":"control_textarea"}
+      {"description":"","name":"financialAssistance43","qid":"43","subLabel":"","text":"Financial Assistance Q4: Please explain in detail why you are requesting registration fee waivers. What specific financial burden(s) pose a challenge to your students from participating in MITMUNC? You may elaborate upon other specifics that you may want to add in this section (300 words or less)","type":"control_textarea"},
+      null,
+      {"description":"","name":"howMany45","qid":"45","subLabel":"Beginner Tier Committees  require no experience! ","text":"How many Beginner Tier Committee spots would your delegation like?","type":"control_dropdown"},
+      {"description":"","name":"howMany46","qid":"46","subLabel":"Intermediate Tier Committees are recommended for delegates who have attended another conference.","text":"How many Intermediate Tier Committee spots would your delegation like?","type":"control_dropdown"},
+      {"description":"","name":"howMany","qid":"47","subLabel":"Advanced Tier Committees are recommended for delegates who have attended 2 or more conferences.","text":"How many Advanced Tier Committee spots would your delegation like?","type":"control_dropdown"},
+      {"description":"","name":"tags","qid":"48","text":"Tags","type":"control_checkbox"}
     ]);
   }, 20);
 </script>
@@ -279,6 +291,7 @@
           </div>
         </div>
       </li>
+      <% if waitlist_open? %>
       <li class="form-line" data-type="control_text" id="id_4">
         <div id="cid_4" class="form-input-wide">
           <div id="text_4" class="form-html" data-component="text">
@@ -287,13 +300,15 @@
           </div>
         </div>
       </li>
-      <li class="form-line always-hidden" data-type="control_text" id="id_39">
-        <div id="cid_39" class="form-input-wide always-hidden">
+      <% else %>
+      <li class="form-line" data-type="control_text" id="id_39">
+        <div id="cid_39" class="form-input-wide">
           <div id="text_39" class="form-html" data-component="text">
             <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor.</span></p>
           </div>
         </div>
       </li>
+      <% end %>
       <li id="cid_14" class="form-input-wide" data-type="control_head">
         <div class="form-header-group ">
           <div class="header-text httal htvam">
@@ -1103,6 +1118,147 @@
           </select>
         </div>
       </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_45">
+        <label class="form-label form-label-top form-label-auto" id="label_45" for="input_45">
+          How many Beginner Tier Committee spots would your delegation like?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_45" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <select class="form-dropdown validate[required]" id="input_45" name="q45_howMany45" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_45 sublabel_input_45">
+              <option value="">  </option>
+              <option value="0"> 0 </option>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+              <option value="5"> 5 </option>
+              <option value="6"> 6 </option>
+              <option value="7"> 7 </option>
+              <option value="8"> 8 </option>
+              <option value="9"> 9 </option>
+              <option value="10"> 10 </option>
+              <option value="11"> 11 </option>
+              <option value="12"> 12 </option>
+              <option value="13"> 13 </option>
+              <option value="14"> 14 </option>
+              <option value="15"> 15 </option>
+              <option value="16"> 16 </option>
+              <option value="17"> 17 </option>
+              <option value="18"> 18 </option>
+              <option value="19"> 19 </option>
+              <option value="20"> 20 </option>
+              <option value="21"> 21 </option>
+              <option value="22"> 22 </option>
+              <option value="23"> 23 </option>
+              <option value="24"> 24 </option>
+              <option value="25"> 25 </option>
+              <option value="26"> 26 </option>
+              <option value="27"> 27 </option>
+              <option value="28"> 28 </option>
+              <option value="29"> 29 </option>
+              <option value="30"> 30 </option>
+            </select>
+            <label class="form-sub-label" for="input_45" id="sublabel_input_45" style="min-height:13px"> Beginner Tier Committees require no experience! </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_46">
+        <label class="form-label form-label-top form-label-auto" id="label_46" for="input_46">
+          How many Intermediate Tier Committee spots would your delegation like?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_46" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <select class="form-dropdown validate[required]" id="input_46" name="q46_howMany46" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_46 sublabel_input_46">
+              <option value="">  </option>
+              <option value="0"> 0 </option>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+              <option value="5"> 5 </option>
+              <option value="6"> 6 </option>
+              <option value="7"> 7 </option>
+              <option value="8"> 8 </option>
+              <option value="9"> 9 </option>
+              <option value="10"> 10 </option>
+              <option value="11"> 11 </option>
+              <option value="12"> 12 </option>
+              <option value="13"> 13 </option>
+              <option value="14"> 14 </option>
+              <option value="15"> 15 </option>
+              <option value="16"> 16 </option>
+              <option value="17"> 17 </option>
+              <option value="18"> 18 </option>
+              <option value="19"> 19 </option>
+              <option value="20"> 20 </option>
+              <option value="21"> 21 </option>
+              <option value="22"> 22 </option>
+              <option value="23"> 23 </option>
+              <option value="24"> 24 </option>
+              <option value="25"> 25 </option>
+              <option value="26"> 26 </option>
+              <option value="27"> 27 </option>
+              <option value="28"> 28 </option>
+              <option value="29"> 29 </option>
+              <option value="30"> 30 </option>
+            </select>
+            <label class="form-sub-label" for="input_46" id="sublabel_input_46" style="min-height:13px"> Intermediate Tier Committees are recommended for delegates who have attended another conference. </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_47">
+        <label class="form-label form-label-top form-label-auto" id="label_47" for="input_47">
+          How many Advanced Tier Committee spots would your delegation like?
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_47" class="form-input-wide jf-required">
+          <span class="form-sub-label-container" style="vertical-align:top">
+            <select class="form-dropdown validate[required]" id="input_47" name="q47_howMany" style="width:150px" data-component="dropdown" required="" aria-labelledby="label_47 sublabel_input_47">
+              <option value="">  </option>
+              <option value="0"> 0 </option>
+              <option value="1"> 1 </option>
+              <option value="2"> 2 </option>
+              <option value="3"> 3 </option>
+              <option value="4"> 4 </option>
+              <option value="5"> 5 </option>
+              <option value="6"> 6 </option>
+              <option value="7"> 7 </option>
+              <option value="8"> 8 </option>
+              <option value="9"> 9 </option>
+              <option value="10"> 10 </option>
+              <option value="11"> 11 </option>
+              <option value="12"> 12 </option>
+              <option value="13"> 13 </option>
+              <option value="14"> 14 </option>
+              <option value="15"> 15 </option>
+              <option value="16"> 16 </option>
+              <option value="17"> 17 </option>
+              <option value="18"> 18 </option>
+              <option value="19"> 19 </option>
+              <option value="20"> 20 </option>
+              <option value="21"> 21 </option>
+              <option value="22"> 22 </option>
+              <option value="23"> 23 </option>
+              <option value="24"> 24 </option>
+              <option value="25"> 25 </option>
+              <option value="26"> 26 </option>
+              <option value="27"> 27 </option>
+              <option value="28"> 28 </option>
+              <option value="29"> 29 </option>
+              <option value="30"> 30 </option>
+            </select>
+            <label class="form-sub-label" for="input_47" id="sublabel_input_47" style="min-height:13px"> Advanced Tier Committees are recommended for delegates who have attended 2 or more conferences. </label>
+          </span>
+        </div>
+      </li>
       <li id="cid_24" class="form-input-wide" data-type="control_head">
         <div class="form-header-group ">
           <div class="header-text httal htvam">
@@ -1320,7 +1476,7 @@
         <div id="cid_2" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-              Join the waitlist for MITMUNC XII 2020
+              Register for MITMUNC XII 2020
             </button>
           </div>
         </div>
