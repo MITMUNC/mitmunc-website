@@ -16,7 +16,7 @@ gem 'simple_form'
 #gem mail_form
 #gem 'country_select'
 #gem 'city-state'
-gem 'bootstrap', '~> 4.1.3'
+gem 'bootstrap'
 gem 'font-awesome-rails'
 gem 'mini_racer'
 # Use Redis adapter to run Action Cable in production
