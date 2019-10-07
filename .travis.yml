@@ -1,5 +1,8 @@
 language: ruby
 rvm: 2.5
+before_script:
+  - "bundle exec rails server -p 3000 -d"
+  - "kill -9 $(cat tmp/pids/server.pid)"
 deploy:
   - provider: elasticbeanstalk
     access_key_id: $ACCESSKEYID
