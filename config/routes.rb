@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   get '/registration_form', to: 'registration_forms#index'
   post '/registration_form', to: 'registration_forms#create'
 
-  get '/committees', to: 'conferences#index'
+  get '/committees', to: 'committees#index'
 
   get '/about', to: 'abouts#index'
 
