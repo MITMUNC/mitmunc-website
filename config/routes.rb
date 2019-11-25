@@ -28,6 +28,8 @@ Rails.application.routes.draw do
 
   get '/committees', to: 'committees#index'
 
+  get '/committees/:slug', to: 'committees#show'
+
   get '/about', to: 'abouts#index'
 
   get '/fees', to: 'fees#index'

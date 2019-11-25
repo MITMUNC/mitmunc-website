@@ -1,0 +1,19 @@
+<% content_for :title do %>MIT Model United Nations Conference &mdash; <%= render file: @name_path %><% end %>
+<div class="container container-main">
+  <div class="row">
+    <div class="col">
+      <h2 class="subtitle">MITMUNC XII 2020</h2>
+      <h1 class="title"><%= render file: @name_path %></h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <h3>Chairs</h3>
+      <img src="<%= image_url @chair1_img_src %>" alt="">
+      <img src="<%= image_url @chair1_img_src %>" alt="">
+    </div>
+    <div class="col">
+      <%= render file: @content_path %>
+    </div>
+  </div>
+</div>

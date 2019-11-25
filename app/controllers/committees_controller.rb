@@ -1,19 +1,34 @@
-class ConferencesController < ApplicationController
-  before_action :set_conference, only: [:show, :edit, :update, :destroy]
+class CommitteesController < ApplicationController
+  before_action :set_committee, only: [:show, :edit, :update, :destroy]
 
-  # GET /conferences
-  # GET /conferences.json
+  # GET /committees
+  # GET /committees.json
   def index
+  end
+
+  # GET /committees/:slug
+  def show
+    committees_path = Rails.root.join("app", "assets", "content", "committees")
+    @name_path = committees_path.join("#{@slug}_name.html")
+    @content_path = committees_path.join("#{@slug}_content.html")
+
+    # If we get the name of a nonexistent committee, just redirect them to the home page.
+    if not File.file?(@name_path) or not File.file?(@content_path)
+      redirect_to "/committees"
+    end
+
+    @chair1_img_src = "#{@slug}_chair_1.png"
+    @chair2_img_src = "#{@slug}_chair_2.png"
   end
 
   private
     # Use callbacks to share common setup or constraints between actions.
-    def set_conference
-      @conference = Conference.find(params[:id])
+    def set_committee
+      @slug = params[:slug]
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
-    def conference_params
-      params.fetch(:conference, {})
+    def committee_params
+      params.permit(:slug)
     end
 end
