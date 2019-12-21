@@ -3,3 +3,8 @@
     white-space: normal;
   }
 }
+.img-responsive card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
