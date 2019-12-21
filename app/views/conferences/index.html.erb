@@ -20,18 +20,19 @@
   <div class="row">
     <div id="committeeAccordion" class="col">
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeASEAN" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#ASEAN" data-toggle="collapse">
           <h3>Association of Southeast Asian Nations (ASEAN)</h3>
         </div>
-        <div id="committeeASEAN" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="ASEAN" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>A specialized body devoted to discussing all things Southeast Asia, particularly focusing on finding multilateral and innovative solutions to challenges that many nations in the region are facing.</p>
-                 <div class="row">
+          <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/ASEAN_2020.pdf", skip_pipeline: true)%></p>
+          <div class="row">
             <div class="col">
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_4086.JPG", class: "img-responsive card-img-top" %>
@@ -48,71 +49,70 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeDISEC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#DISEC" data-toggle="collapse">
           <h3>Disarmament and International Security Committee (DISEC)</h3>
         </div>
-        <div id="committeeDISEC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="DISEC" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>The Disarmament and International Security Committee focuses its attention on issues pertaining to the preservation of global peace and international security.</p>
-               <div class="row">
-          <div class="col">
-            <h2 class="title">Chairs</h2>
+          <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/DISEC_2020.pdf", skip_pipeline: true)%></p>
+          <div class="row">
+            <div class="col">
+              <h2 class="title">Chairs</h2>
+            </div>
           </div>
-        </div>
-           <div class="row">
+          <div class="row">
             <div class="card text-center">
               <%= image_tag "IMG_3904.JPG", class: "img-responsive card-img-top" %>
               <div class="card-body">
                 <h5 class="card-title">Joanna Nikolov</h5>
               </div>
-          </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeECOSOC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#VIENNA" data-toggle="collapse">
           <h3>Congress of Vienna, 1814 (VIENNA)</h3>
         </div>
-        <div id="committeeECOSOC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="VIENNA" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Intermediate</b></p>
           <p>Napoleon has fallen. European borders and notions of states lies in shambles. Congress has been called as the dust settles to set a new status quo for the balance of power and intercontinental politics of Europe.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/VIENNA_2020.pdf", skip_pipeline: true)%></p> 
           <div class="row">  
-          <div class="col">
+            <div class="col">
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
-              <div class="card text-center">
-                <%= image_tag "IMG_4113.JPG", class: "img-responsive card-img-top"%>
-                <div class="card-body">
-                  <h5 class="card-title">Lacthu Vu</h5>
-                </div>
+          <div class="row">
+            <div class="card text-center">
+              <%= image_tag "IMG_4113.JPG", class: "img-responsive card-img-top"%>
+              <div class="card-body">
+                <h5 class="card-title">Lacthu Vu</h5>
               </div>
-           </div>
-        
+            </div>
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeEU" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#FB" data-toggle="collapse">
           <h3>Facebook Board of Directors, 2018 (FB)</h3>
         </div>
-        <div id="committeeEU" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="FB" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Intermediate</b></p>
           <p>Facebook was shaken at its roots in early 2018 when it was publicized Cambridge Analytica’s use of personal data collected by the social media giant in order to influence US election outcomes. The purview of this committee, which will be comprised of Facebook’s Directors, management team, and associated staff, is to address new concerns that have arisen as a result of this scandal, and push the company in the direction of success.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/FB_2020.pdf", skip_pipeline: true)%></p>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeHRC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#QING" data-toggle="collapse">
           <h3>Imperial Court of the Qing Dynasty, 1840 (QING)</h3>
         </div>
-        <div id="committeeHRC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="QING" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Intermediate</b></p>
           <p>The Qing Dynasty was established in 1643. By the 1800s, it had reached its largest size, but poverty, rebellion, heavy foreign pressure, and high population growth deteriorated the once great dynasty. The Imperial Court aims to reform society while also tackling the growing tension with the British.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/QING_2020.pdf", skip_pipeline: true)%></p>
@@ -121,7 +121,7 @@
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_4016.JPG", class: "img-responsive card-img-top" %>
@@ -138,15 +138,14 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeIAEA" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#IAEA" data-toggle="collapse">
           <h3>International Atomic Energy Agency (IAEA)</h3>
         </div>
-        <div id="committeeIAEA" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="IAEA" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>The International Atomic Energy Association is designed to promote peaceful and innovative uses of atomic energy, while also monitoring and preventing militaristic uses of these powerful technologies.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/IAEA_2020.pdf", skip_pipeline: true)%></p>
@@ -155,7 +154,7 @@
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_3933.JPG", class: "img-responsive card-img-top" %>
@@ -172,23 +171,23 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeIMF" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#ICC" data-toggle="collapse">
           <h3>International Criminal Court (ICC) </h3>
         </div>
-        <div id="committeeIMF" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="ICC" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Advanced</b></p>
           <p>The International Criminal Court, set up under the Rome Statute in 2002, is an intergovernmental body designed to prosecute those accused of genocide, crimes against humanity, and war crimes, among other atrocities. The body may only try individuals under certain sets of circumstances - being that they may only try citizens of their own member states or those that the United Nations Security Council has referred to the ICC.</p>
-                 <div class="row">
+          <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/ICC_2020.pdf", skip_pipeline: true)%></p>
+          <div class="row">
             <div class="col">
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_4041.JPG", class: "img-responsive card-img-top" %>
@@ -205,23 +204,22 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeJCC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#NUGS" data-toggle="collapse">
           <h3>Joint Crisis (NUGS)</h3>
         </div>
-        <div id="committeeJCC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="NUGS" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Advanced</b></p>
           <p>Taking place in 2050 after a post-climate change “apocalypse” that has left the world in an unrecognizable state. Food is scarce, and those who control it have all the power in society. To overpower rivals, massive global food chains like McDonald’s, Burger King, Nando’s, Subway, and Starbucks have begun teaming up with each other to form even larger corporate conglomerates that have expanded their scopes into all sectors, including agriculture, technology, education, and the military. As directors sitting on the boards of these newly formed corporate powerhouses, it will be your responsibility to propel your company above your rivals and bring society back from the brink of shutdown.</p>
-         <div class="row">
+          <div class="row">
             <div class="col">
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_3921.JPG", class: "img-responsive card-img-top" %>
@@ -238,15 +236,14 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeSPECPOL" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#SPECPOL" data-toggle="collapse">
           <h3>Special Political & Decolonization Committee (SPECPOL)</h3>
         </div>
-        <div id="committeeSPECPOL" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="SPECPOL" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>As the United Nations General Assembly’s Fourth Committee, SPECPOL can deal with a wide variety of political topics, which have included peacekeeping, decolonization, and the peaceful uses of outer space.</p>
           <div class="row">
@@ -266,25 +263,24 @@
                 </div>
               </div>
             </div>
-           </div>
-        
+          </div>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeUNHCR" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#UNWOMEN" data-toggle="collapse">
           <h3>UN Entity for Gender Equality and the Empowerment of Women (UNWOMEN)</h3>
         </div>
-        <div id="committeeUNHCR" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="UNWOMEN" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>UN WOMEN, which first met in 2011, was designed to promote women’s rights, gender equality, and the empowerment of women on an international scale.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/UNWOMEN_2020.pdf", skip_pipeline: true)%></p>
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeUNSC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#UNSC" data-toggle="collapse">
           <h3>United Nations Security Council (UNSC)</h3>
         </div>
-        <div id="committeeUNSC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="UNSC" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Advanced</b></p>
           <p>As the Organ of the United Nations tasked with upholding global peace and security, and with the authority to take action to do so, the Security Council addresses pressing issues in dire need of action to promote and maintain global order.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/UNSC_2020.pdf", skip_pipeline: true)%></p> 
@@ -293,7 +289,7 @@
               <h2 class="title">Chairs</h2>
             </div>
           </div>
-             <div class="row">
+          <div class="row">
             <div class="col-md-6">
               <div class="card text-center">
                 <%= image_tag "IMG_3954.JPG", class: "img-responsive card-img-top" %>
@@ -310,14 +306,14 @@
                 </div>
               </div>
             </div>
-           </div> 
+          </div> 
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeWHO" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#WHO" data-toggle="collapse">
           <h3>World Health Organization (WHO)</h3>
         </div>
-        <div id="committeeWHO" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="WHO" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Beginner</b></p>
           <p>The World Health Organization is focused on addressing the world’s most urgent or prevalent health issues, whether that be through directly addressing an outbreak, providing oversight on healthcare standards, or by installing innovative public health policies across the globe.</p>
           <p><%= link_to "Background Guide", asset_path("MITMUNC_XII/WHO_2020.pdf", skip_pipeline: true)%></p>
@@ -347,10 +343,10 @@
         </div>
       </div>
       <div class="card">
-        <div class="btn btn-outline-primary text-left" data-target="#committeeUNODC" data-toggle="collapse">
+        <div class="btn btn-outline-primary text-left" data-target="#UNODC" data-toggle="collapse">
           <h3>UN Office on Drugs and Crime (UNODC)</h3>
         </div>
-        <div id="committeeUNODC" class="card-body collapse" data-parent="#committeeAccordion">
+        <div id="UNODC" class="card-body collapse" data-parent="#committeeAccordion">
           <p>Tier: <b>Intermediate</b></p>
           <p>Topics TBA.</p>
           <div class="row">
