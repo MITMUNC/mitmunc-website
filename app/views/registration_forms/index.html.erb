@@ -291,20 +291,20 @@
           </div>
         </div>
       </li>
-      <% if waitlist_open? %>
+      <% if registration_open? %>
+      <li class="form-line" data-type="control_text" id="id_39">
+        <div id="cid_39" class="form-input-wide">
+          <div id="text_39" class="form-html" data-component="text">
+            <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor.</span></p>
+          </div>
+        </div>
+      </li>
+      <% else %>
       <li class="form-line" data-type="control_text" id="id_4">
         <div id="cid_4" class="form-input-wide">
           <div id="text_4" class="form-html" data-component="text">
             <p><span style="font-family: book antiqua, palatino, serif;"><strong>The waitlist for MITMUNC XII 2020 has opened.</strong></span></p>
             <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration. </span></p>
-          </div>
-        </div>
-      </li>
-      <% else %>
-      <li class="form-line" data-type="control_text" id="id_39">
-        <div id="cid_39" class="form-input-wide">
-          <div id="text_39" class="form-html" data-component="text">
-            <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor.</span></p>
           </div>
         </div>
       </li>
@@ -1476,7 +1476,7 @@
         <div id="cid_2" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-              Register for MITMUNC XII 2020
+              <% if registration_open? %>Register<% else %>Join the waitlist<% end %> for MITMUNC XII 2020
             </button>
           </div>
         </div>
