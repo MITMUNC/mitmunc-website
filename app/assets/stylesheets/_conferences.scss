@@ -3,3 +3,17 @@
     white-space: normal;
   }
 }
+.img {
+    width: 100%;
+    height: 20vw;
+    object-fit: cover;
+}
+
+.img-solo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 20vw;
+    object-fit: cover;
+}
