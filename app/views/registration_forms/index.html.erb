@@ -1,5 +1,5 @@
-<% if registration_open? or waitlist_open? %>
-<% content_for :title do %>MIT Model United Nations Conference XII <% if registration_open? %>Registration<% else %>Waitlist Application<% end %><% end %>
+<% if registration_open? %>
+<% content_for :title do %>MIT Model United Nations Conference XII <% if waitlist_open? %>Waitlist Application<% else %>Registration<% end %><% end %>
 <link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13025" rel="stylesheet" type="text/css" />
 <link type="text/css" media="print" rel="stylesheet" href="https://cdn.jotfor.ms/css/printForm.css?3.3.13025" />
 <link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13025" />
@@ -291,24 +291,18 @@
           </div>
         </div>
       </li>
-      <% if registration_open? %>
-      <li class="form-line" data-type="control_text" id="id_39">
-        <div id="cid_39" class="form-input-wide">
-          <div id="text_39" class="form-html" data-component="text">
-            <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor.</span></p>
-          </div>
-        </div>
-      </li>
-      <% else %>
       <li class="form-line" data-type="control_text" id="id_4">
         <div id="cid_4" class="form-input-wide">
           <div id="text_4" class="form-html" data-component="text">
-            <p><span style="font-family: book antiqua, palatino, serif;"><strong>The waitlist for MITMUNC XII 2020 has opened.</strong></span></p>
-            <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor. If offered a space from waitlist, payment shall be due immediately to confirm registration. </span></p>
+            <% if waitlist_open? %><p><span style="font-family: book antiqua, palatino, serif;"><strong>
+              <% if not late_application_penalty_active? %>The waitlist for MITMUNC XII 2020 has opened.
+              <% else %>The waitlist for MITMUNC XII 2020 has closed. You can still submit a late application, however, a late fee will be applied.
+              <% end %></strong></span></p>
+            <% end %>
+            <p><span style="font-family: book antiqua, palatino, serif;">Please make sure you have proper knowledge of conference information, fees, and deadlines before proceeding. The application is to be completed by a school or educational organization’s designated faculty advisor.<% if waitlist_open? %> If offered a space from waitlist, payment shall be due immediately to confirm registration.<% end %></span></p>
           </div>
         </div>
       </li>
-      <% end %>
       <li id="cid_14" class="form-input-wide" data-type="control_head">
         <div class="form-header-group ">
           <div class="header-text httal htvam">
@@ -1476,7 +1470,7 @@
         <div id="cid_2" class="form-input-wide">
           <div style="margin-left:156px" class="form-buttons-wrapper">
             <button id="input_2" type="submit" class="form-submit-button" data-component="button">
-              <% if registration_open? %>Register<% else %>Join the waitlist<% end %> for MITMUNC XII 2020
+              <% if waitlist_open? %>Join the waitlist<% else %>Register<% end %> for MITMUNC XII 2020
             </button>
           </div>
         </div>

@@ -22,9 +22,7 @@
         <a href="https://www.instagram.com/mitmunc/" target="_blank"><%= fa_icon "instagram 2x", alt: "Instagram" %></a>
       </div>
 <% if registration_open? %>
-      <a class ="btn btn-register" href="/registration_form">Register now</a>
-<% elsif waitlist_open? %>
-      <a class ="btn btn-register" href="/registration_form">Join the waitlist</a>
+      <a class ="btn btn-register" href="/registration_form"><% if waitlist_open? %>Join the waitlist<% else %>Register now<% end %></a>
 <% end %>
     </div>
   </nav>
